@@ -318,12 +318,12 @@ body {
                 overflow: hidden;
                 position: relative;
             }
-                #footer .icon-block-hor .two-but {
+                #footer .icon-block-hor .but-cont {
                     position: absolute;
                     right: 0;
                     top: 0;
                 }
-                    #footer .icon-block-hor .two-but a {
+                    #footer .icon-block-hor .but-cont a {
                         text-transform: uppercase;
                     }
             #footer .footer-logo {

@@ -313,6 +313,19 @@ body {
             padding: 0 103px 0 0;
             position: relative;
         }
+            #footer .icon-block-hor {
+                height: 22px;
+                overflow: hidden;
+                position: relative;
+            }
+                #footer .icon-block-hor .two-but {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                    #footer .icon-block-hor .two-but a {
+                        text-transform: uppercase;
+                    }
             #footer .footer-logo {
                 position: absolute;
                 right: -10px;
@@ -360,9 +373,33 @@ body {
             padding: 2px 4px;
             line-height: 15px;
         }
-        .but-no-r-border-r {
-
+        .but-cont {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
         }
+            .but-cont .but {
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                border-radius: 0px;
+                margin: 0 -4px 0 0;
+            }
+                .but-cont .but:first-child {
+                    -webkit-border-top-left-radius: 3px;
+                    -webkit-border-bottom-left-radius: 3px;
+                    -moz-border-radius-topleft: 3px;
+                    -moz-border-radius-bottomleft: 3px;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+                .but-cont .but:last-child {
+                    -webkit-border-top-right-radius: 3px;
+                    -webkit-border-bottom-right-radius: 3px;
+                    -moz-border-radius-topright: 3px;
+                    -moz-border-radius-bottomright: 3px;
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
             .but:hover {
                 color: #fff;
             }
@@ -382,6 +419,19 @@ body {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa5757', endColorstr='#e9020d',GradientType=0 );
             border: 1px solid #e9010d;
             color: #fff;
+        }
+        .white-but-v-1 {
+            background: #ffffff;
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI2JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc3JSIgc3RvcC1jb2xvcj0iI2VlZjBmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWYwZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 26%, #eef0f6 77%, #eef0f6 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(26%,#ffffff), color-stop(77%,#eef0f6), color-stop(100%,#eef0f6));
+            background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 26%,#eef0f6 77%,#eef0f6 100%);
+            background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 26%,#eef0f6 77%,#eef0f6 100%);
+            background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 26%,#eef0f6 77%,#eef0f6 100%);
+            background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 26%,#eef0f6 77%,#eef0f6 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eef0f6',GradientType=0 );
+            border: 1px solid #c7cbdb;
+            color: #005199;
         }
             .red-but-v-1 .icon-phone-span {
                 position: relative;

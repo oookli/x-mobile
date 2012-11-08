@@ -1,6 +1,13 @@
 ;(function($,undefined) {
 /*-----------------------------------------------------------------------------------*/
-
+/* 
+	initialize variables
+*/
+	var $layout = $("#layout"),
+			$mainNav = $("#main-nav ul");
+/* 
+	end initialize variables
+*/
 /*
 	Navigation togle
 */
@@ -71,6 +78,23 @@
   });
 /*
 	end apply flexslider 2
+*/
+/*
+	apply resmenu
+*/
+	$layout.responsiveMenu({
+      positionMenu: "right",
+      minWidth: 2000,
+      menuElem: [$mainNav],
+      afterOpenFn: function(){
+        
+      },
+      afterCloseFn: function(){
+
+      }
+    });
+/*
+	end apply resmenu
 */
 /*--------------------------------------------------------*/
 })(jQuery);

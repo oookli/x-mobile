@@ -21,6 +21,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexslider.css" media="all">
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
     <body>
@@ -49,14 +50,47 @@
             </div>
         </header>
         <!-- End of Header -->
-
+        <!-- billboard -->
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="img/billboard/1.jpg" alt="slide 1">
+                </li>
+                <li>
+                    <img src="img/billboard/2.jpg" alt="slide 2">
+                </li>
+                <li>
+                    <img src="img/billboard/3.jpg" alt="slide 3">
+                </li>
+                <li>
+                    <img src="img/billboard/4.jpg" alt="slide 4">
+                </li>
+                <li>
+                    <img src="img/billboard/5.jpg" alt="slide 5">
+                </li>
+                <li>
+                    <img src="img/billboard/6.jpg" alt="slide 6">
+                </li>
+            </ul>
+        </div>
+        <!-- end billboad -->
         <!-- Content -->
         <section id="content">
             <div class="centered-content">
-
+                <!-- header -->
+                <h1 class="axa-h"><a href="#">Ласкаво просимо в AXA</a></h1>
+                <!-- end header -->
                 <!-- Homepage content -->
                 <section id="home-page">
-                    Modified home page content (test commit by Y.Dzhavala). Updates from 'Test' brahch
+                    <!-- Nav list -->
+                    <ul class="nav-list">
+                        <li><a href="#">Автострахування</a></li>
+                        <li><a href="#">Страхування майна</a></li>
+                        <li><a href="#">Медичне страхування</a></li>
+                        <li><a href="#">Туристичне страхування</a></li>
+                        <li><a href="#">Страхування вантажів</a></li>
+                    </ul>
+                    <!-- End of Nav list -->
                 </section>
                 <!-- End of Homepage content -->
             </div>
@@ -85,8 +119,9 @@
         </footer>
         <!-- End of Footer --> 
 
-        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/vendor/jquery-1.8.2.min.js"></script>
         <script src="js/helper.js"></script>
+        <script src="js/plugins/jquery.flexslider-min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

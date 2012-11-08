@@ -402,6 +402,7 @@ ol {
     background-size: 10px 8px;
     color: #005199;
     padding: 0 15px 0 0;
+    font-size: 11px;
     text-decoration: none;
 }
 
@@ -414,7 +415,7 @@ ol {
 .block-next {
     background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat;
     border-bottom: 1px solid #c8ccdc;
-    padding: 0 20px 0 0;
+    padding: 0 20px 6px 0;
 }
 .news-item h2 a {
     color:#005199;
@@ -425,6 +426,7 @@ ol {
 ***/
 .paginator {
   padding: 10px 0;
+  overflow: hidden;
 }
 .paginator ul {
     margin: 0;
@@ -463,6 +465,104 @@ ol {
 ***/
 /*** 
     End of News 
+***/
+/*** 
+    Search Result Page 
+***/
+.search-result-page h2 {
+    margin: 0;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+    padding: 8px 0 0 0;
+    line-height: 16px;
+}
+.search-result-page h2 a{
+    text-decoration: none; 
+    dispaly: block;
+    color: #005199;
+}
+.search-result-page p {
+    font-family: arial;
+    font-size: 11px;
+    color: #666666;
+    margin: 0;
+    padding: 2px 0;
+}
+.search-form{
+    width: 300px;
+    height: 32px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: rgb(246,247,251); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZjdmYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYmRjZWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgb(246,247,251) 0%, rgb(203,220,236) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(246,247,251)), color-stop(100%,rgb(203,220,236))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgb(246,247,251) 0%,rgb(203,220,236) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgb(246,247,251) 0%,rgb(203,220,236) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgb(246,247,251) 0%,rgb(203,220,236) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgb(246,247,251) 0%,rgb(203,220,236) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7fb', endColorstr='#cbdcec',GradientType=0 ); /* IE6-8 */
+}
+.search-form form {
+width: 300px;
+    height: 32px;
+}
+.search-form input {
+    outline: none;
+    width: 258px;
+    height: 30px;
+    padding: 0 4px;
+    margin: 0;
+    float: left;
+    border: 1px solid #cbcbce;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 14px;
+    font-family: arial;
+    font-style: italic;
+    color: #999999;
+    -moz-box-shadow: 0px 1px 2px -1px #999999 inset;
+    -webkit-box-shadow: 0px 1px 2px -1px #999999 inset;
+    box-shadow: 0px 1px 2px -1px #999999 inset;
+}
+.search-form button {
+    height: 32px;
+    width: 32px;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #cbcbce;
+    border-top: 1px solid #cbcbce;
+    border-bottom: 1px solid #cbcbce;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
+    background: transparent url(../img/ico-search.png) center center no-repeat; 
+    background-size: 18px 18px;
+    cursor: pointer;
+}
+.search-count {
+    padding: 2px 0;
+}
+.search-count p {
+    font-family: Arial;
+    font-size: 12px;
+    color:#005199;
+}
+
+/*** 
+    End of Search Result Page 
 ***/
 /*** 
     Footer 

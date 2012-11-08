@@ -118,6 +118,10 @@ ol {
         #layout {
             min-height: 100%;
             height: auto;
+            -webkit-transition: -webkit-transform .2s linear;
+            -moz-transition: -moz-transform .2s linear;
+            -o-transition: -o-transform .2s linear;
+            transition: transform .2s linear;
             }
     h1 {
         color: #113184;

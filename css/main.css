@@ -362,6 +362,114 @@ ol {
     end Content
 ***/        
 
+/***
+    News Single Page
+***/
+
+.block-header {
+    border-bottom: 1px solid #c8ccdc;
+}
+.prev {
+   background: transparent url(../img/icon-blue-arrow-small-back.png) 0 4px no-repeat;
+    background-size: 8px 13px; 
+    padding: 0 0 0 15px;
+}
+.news-item h2 {
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 14px;
+    color: #113184;
+    margin: 0;
+    padding: 8px 0 3px 0;
+    line-height: 16px;
+}
+.news-item .date {
+    font-family: Arial;
+    font-size: 10px;
+    color: #666666;
+    padding: 0 0 6px 0;
+    display: block;
+}
+.news-item p {
+    font-family: Arial;
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+    padding: 4px 0;
+}
+.read-on-main a {
+     background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../img/read-more-ico.png");
+    background-origin: padding-box;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 10px 8px;
+    color: #005199;
+    padding: 0 15px 0 0;
+    text-decoration: none;
+}
+
+/***
+    End of the News Single Page
+***/
+/*** 
+    News 
+***/
+.block-next {
+    background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat;
+    border-bottom: 1px solid #c8ccdc;
+    padding: 0 20px 0 0;
+}
+.news-item h2 a {
+    color:#005199;
+    text-decoration: none;
+}
+/*** 
+    Paginator 
+***/
+.paginator {
+  padding: 10px 0;
+}
+.paginator ul {
+    margin: 0;
+    padding: 0;
+}
+.paginator ul li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.paginator a {
+   color: #005199; 
+   text-decoration: none;
+   font-size: 13px;
+   padding: 6px 10px;
+   display: inline-block;
+   overflow: hidden;
+}
+.paginator li.act a {
+    background-color: #0066aa;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.paginator li.next a {
+    background: transparent url(../img/ico-next.png) 0 0 no-repeat;
+    background-size: 25px 25px; 
+    width: 25px;
+    height:25px;
+}
+
+/*** 
+    End of Paginator 
+***/
+/*** 
+    End of News 
+***/
 /*** 
     Footer 
 ***/

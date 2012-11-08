@@ -426,26 +426,36 @@ ol {
 .paginator {
   padding: 10px 0;
 }
+.paginator ul {
+    margin: 0;
+    padding: 0;
+}
+.paginator ul li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .paginator a {
    color: #005199; 
    text-decoration: none;
    font-size: 13px;
    padding: 6px 10px;
    display: inline-block;
-   height: 13px;
    overflow: hidden;
 }
-.paginator a.act {
+.paginator li.act a {
     background-color: #0066aa;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     color: #ffffff;
 }
-.paginator a.next {
+.paginator li.next a {
     background: transparent url(../img/ico-next.png) 0 0 no-repeat;
     background-size: 25px 25px; 
     width: 25px;
+    height:25px;
 }
 
 /*** 

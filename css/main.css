@@ -451,9 +451,8 @@ ol {
     Paginator 
 ***/
 .paginator {
-  padding: 10px 0;
-  overflow: hidden;
-  display: block;
+    padding: 10px;
+    overflow: hidden;
 }
 .paginator ul {
     margin: 0;

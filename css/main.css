@@ -453,6 +453,7 @@ ol {
 .paginator {
   padding: 10px 0;
   overflow: hidden;
+  display: block;
 }
 .paginator ul {
     margin: 0;

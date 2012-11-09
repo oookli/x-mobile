@@ -470,6 +470,9 @@ ol {
 .insurance .item-block {
     margin: 0 0 15px 0;
 }
+.insurance .item-block h2 {
+    background: transparent url("../img/axa-h-red-streak.png") right center no-repeat;
+}
 .insurance ul {
     margin: 0;
     padding: 0;

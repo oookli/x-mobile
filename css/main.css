@@ -18,7 +18,8 @@ textarea {
 }
 
 a {
-    color: #fff;
+    color: #005199;
+    text-decoration: none;
 }
 
 a:visited {
@@ -26,7 +27,8 @@ a:visited {
 }
 
 a:hover {
-    color: #fff;
+    color: #005199;
+    text-decoration: none;
 }
 
 /*
@@ -119,7 +121,7 @@ ol {
             min-height: 100%;
             height: auto;
             }
-    h1 {
+     h1 {
         color: #113184;
         font-size: 19px;
         font-weight: bold;
@@ -140,6 +142,27 @@ ol {
         *display: inline;
         *zoom: 1;
     }
+    h2 {
+        font-family: Arial;
+        font-weight: normal;
+        font-size: 14px;
+        color: #113184;
+        margin: 0;
+        padding: 8px 0 3px 0;
+        line-height: 16px;
+    }
+    h3 {
+        color:#005199;
+        font-family: Arial;
+        font-size: 12px;
+    }
+    p {
+    font-size: 11px;
+    font-family: Arial;
+    color: #666666;
+    margin: 0;
+    padding: 4px 0;
+}
 /***
     end Main styles 
 ***/
@@ -443,6 +466,27 @@ ol {
                 -webkit-box-shadow: 0 1px 1px rgba(16,49,132,.4);
                 box-shadow: 0 1px 1px rgba(16,49,132,.4);
                 border: 1px solid rgba(16,49,132,.2); 
+}
+.insurance .item-block {
+    margin: 0 0 15px 0;
+}
+.insurance ul {
+    margin: 0;
+    padding: 0;
+}
+.insurance ul li {
+    list-style: none;
+    margin: 0;
+    padding: 7px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #c8ccdc;
+    background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat; 
+}
+.insurance ul li a {
+    display: block;
+}
+.insurance ul li:last-child {
+    border-bottom: none;
 }
 /*** 
     End of Insurance 

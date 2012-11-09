@@ -155,6 +155,7 @@ ol {
         color:#005199;
         font-family: Arial;
         font-size: 12px;
+        font-weight: normal;
     }
     p {
     font-size: 11px;
@@ -493,6 +494,21 @@ ol {
 }
 .insurance ul li:last-child {
     border-bottom: none;
+}
+.insurance-item ul {
+    margin: 0;
+    padding: 0;
+}
+.insurance-item ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    color: #666666;
+}
+.insurance-item ul li:before {
+    content: "• ";
+    color: #005199;
 }
 /*** 
     End of Insurance 

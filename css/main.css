@@ -172,10 +172,16 @@ ol {
     }
     p {
     font-size: 11px;
-
     color: #666666;
     margin: 0;
     padding: 4px 0;
+}
+.block-item-small p.type11 {
+    font-size: 11px;
+}
+.block-item-small span {
+    color: #999999;
+    font-size: 9px;
 }
 /***
     end Main styles 
@@ -560,6 +566,7 @@ ol {
     padding: 8px 0 3px 0;
     line-height: 16px;
 }*/
+
 .news-item .date {
     font-family: Arial;
     font-size: 10px;
@@ -575,6 +582,7 @@ ol {
     margin: 0;
     padding: 4px 0;*
 }*/
+
 .read-on-main a {
      background-attachment: scroll;
     background-clip: border-box;
@@ -595,10 +603,12 @@ ol {
 /*** 
     News 
 ***/
-.block-next {
-    background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat;
+.block-item {  
     border-bottom: 1px solid #c8ccdc;
     padding: 0 20px 6px 0;
+}
+.next-page {
+   background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat; 
 }
 .news-item h2 a {
     color:#005199;
@@ -607,9 +617,30 @@ ol {
 .news-item p 
     font-size: 12px;
 }
-/*** 
-    Paginator 
-***/
+/* Contacts */
+
+.block-item-small {
+    padding: 0 0 0 5px;
+}
+.block-item-small p {
+    font-size: 12px;
+    margin: 0;
+    padding: 2px 0;
+}
+.block-item-small {
+    padding: 0 0 10px 5px;
+}
+.block-item-small .but-cont-hor {
+    height: 30px;
+    margin: 5px 0;
+}
+.block-item-small .but-cont-hor a {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin: 0 5px 0 0;
+}
+/* Paginator */
+
 .paginator {
     padding: 10px 0;
     overflow: hidden;

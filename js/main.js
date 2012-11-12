@@ -85,6 +85,7 @@
 	$layout.responsiveMenu({
       positionMenu: "right",
       minWidth: 2000,
+      closeAfterClick: false,
       menuElem: [$mainNav],
       afterOpenFn: function(){
         

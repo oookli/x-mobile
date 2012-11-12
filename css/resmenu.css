@@ -32,6 +32,10 @@
     .mobile-menu-right ul li {
       border-bottom: 1px solid #ccc;
     }
+    .mobile-menu-left ul li:before,
+    .mobile-menu-right ul li:before {
+      content: none;
+    }
       .mobile-menu-left ul li a,
       .mobile-menu-right ul li a,
       .mobile-menu-left ul li span,

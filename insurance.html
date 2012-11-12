@@ -19,6 +19,7 @@
 
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="css/resmenu.css" media="all">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
@@ -37,11 +38,19 @@
                     <a href="#" id="main-nav-trigger" class="active-"></a> 
                     <nav id="main-nav" class="hidden">
                         <ul class="nav-list">
+                            <li>
+                                <div class="search-form">
+                            <img src="img/ico-search.png">
+                            <input class="search-input" type="search" />
+                            <input class="search-submit" type="submit" value="">
+                        </input>
+                        </div>
+                            </li>
                             <li><a href="index.html">Home</a></li>
-                            <li><span>Program</span></li>
-                            <li><a href="speakers.html">Speakers</a></li>
-                            <li><a href="directions.html">Directions</a></li>
-                            <li><a href="twitter.html">Twitter</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="insurance.html">Insurance</a></li>
+                            <li><a href="offices.html">Offices</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
                         </ul>
                     </nav>
                     <!-- End of Main navigation -->
@@ -62,27 +71,27 @@
                             <h2>КАСКО &laquo;Все включено&raquo;</h2>
                             <p>Компенсує усі непередбачені збитки</p>
                             <ul>
-                                <li><a href="#">Детальніше</a></li>
-                                <li><a href="#">Переваги КАСКО</a></li>
-                                <li><a href="#">Розрахувати вартість полісу</a></li>
+                                <li><a href="insurance-single-page.html">Детальніше</a></li>
+                                <li><a href="insurance-single-page.html">Переваги КАСКО</a></li>
+                                <li><a href="insurance-single-page.html">Розрахувати вартість полісу</a></li>
                             </ul>
                         </div>
                         <div class="item-block">
                             <h2>ОСЦПВ (автоцивілка)</h2>
                             <p>Безкоштовна евакуація, доставка палива, організація незначного ремонту на дорозі.</p>
                             <ul>
-                                <li><a href="#">Автоцивілка</a></li>
-                                <li><a href="#">Переваги автоцивілки</a></li>
-                                <li><a href="#">Автокард ПЛЮС</a></li>
-                                <li><a href="#">Знижки СТО</a></li>
-                                <li><a href="#">Втрачені бланки</a></li>
+                                <li><a href="insurance-single-page.html">Автоцивілка</a></li>
+                                <li><a href="insurance-single-page.html">Переваги автоцивілки</a></li>
+                                <li><a href="insurance-single-page.html">Автокард ПЛЮС</a></li>
+                                <li><a href="insurance-single-page.html">Знижки СТО</a></li>
+                                <li><a href="insurance-single-page.html">Втрачені бланки</a></li>
                             </ul>
                         </div>
                         <div class="item-block">
                             <h2>ДСЦВ (добровільна автоцивілка)</h2>
                             <p>Добровільне страхування цивільної відповідальності власників наземних </p>
                             <ul>
-                                <li><a href="#">Детальніше</a></li>
+                                <li><a href="insurance-single-page.html">Детальніше</a></li>
                             </ul>
                         </div>
                     </div>
@@ -113,9 +122,10 @@
             </div>
         </footer>
         <!-- End of Footer --> 
-
-        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/vendor/jquery-1.8.2.min.js"></script>
         <script src="js/helper.js"></script>
+        <script src="js/plugins/jquery.flexslider-min.js"></script>
+        <script src="js/plugins/resmenu.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

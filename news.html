@@ -19,6 +19,7 @@
 
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="css/resmenu.css" media="all">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
@@ -37,11 +38,19 @@
                     <a href="#" id="main-nav-trigger" class="active-"></a> 
                     <nav id="main-nav" class="hidden">
                         <ul class="nav-list">
+                            <li>
+                                <div class="search-form">
+                            <img src="img/ico-search.png">
+                            <input class="search-input" type="search" />
+                            <input class="search-submit" type="submit" value="">
+                        </input>
+                        </div>
+                            </li>
                             <li><a href="index.html">Home</a></li>
-                            <li><span>Program</span></li>
-                            <li><a href="speakers.html">Speakers</a></li>
-                            <li><a href="directions.html">Directions</a></li>
-                            <li><a href="twitter.html">Twitter</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="insurance.html">Insurance</a></li>
+                            <li><a href="offices.html">Offices</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
                         </ul>
                     </nav>
                     <!-- End of Main navigation -->
@@ -60,24 +69,24 @@
                         <div class="block-header">
                             <h1>Новини</h1>
                         </div> 
-                        <div class="block-next">
-                           <h2><a href="#">«АХА Страхування» запроваджує інноваційний підхід врегулювання збитків</a></h2>
+                        <div class="block-item next-page">
+                           <h2><a href="news-single-page.html">«АХА Страхування» запроваджує інноваційний підхід врегулювання збитків</a></h2>
                            <span class="date">23.10.2012</span>
                         </div>
-                        <div class="block-next">
-                           <h2><a href="#">Міжнародна рейтингова агенція Fitch підтверджує рейтинг фінансової стабільності Групи АХА</a></h2>
+                        <div class="block-item next-page">
+                           <h2><a href="news-single-page.html">Міжнародна рейтингова агенція Fitch підтверджує рейтинг фінансової стабільності Групи АХА</a></h2>
                            <span class="date">23.10.2012</span>
                         </div>
-                        <div class="block-next">
-                           <h2><a href="#">Страхова компанія «АХА Страхування» та УкрСиббанк проводять акцію для власників авто</a></h2>
+                        <div class="block-item next-page">
+                           <h2><a href="news-single-page.html">Страхова компанія «АХА Страхування» та УкрСиббанк проводять акцію для власників авто</a></h2>
                            <span class="date">23.10.2012</span>
                         </div>
-                        <div class="block-next">
-                           <h2><a href="#">«У вересні 2012р. «АХА Страхування» сплатила близько 5 млн. гривень за найкрупнішими страховими випадками</a></h2>
+                        <div class="block-item next-page">
+                           <h2><a href="news-single-page.html">«У вересні 2012р. «АХА Страхування» сплатила близько 5 млн. гривень за найкрупнішими страховими випадками</a></h2>
                            <span class="date">23.10.2012</span>
                         </div>
-                        <div class="block-next">
-                           <h2><a href="#">У вересні 2012р. «АХА Страхування» відшкодувала 28 млн. гривень</a></h2>
+                        <div class="block-item next-page">
+                           <h2><a href="news-single-page.html">У вересні 2012р. «АХА Страхування» відшкодувала 28 млн. гривень</a></h2>
                            <span class="date">23.10.2012</span>
                         </div> 
                         <div class="paginator">
@@ -119,9 +128,10 @@
             </div>
         </footer>
         <!-- End of Footer --> 
-
-        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/vendor/jquery-1.8.2.min.js"></script>
         <script src="js/helper.js"></script>
+        <script src="js/plugins/jquery.flexslider-min.js"></script>
+        <script src="js/plugins/resmenu.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

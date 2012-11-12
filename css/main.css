@@ -20,6 +20,7 @@ textarea {
 a {
     color: #005199;
     text-decoration: none;
+    outline: none;
 }
 
 a:visited {
@@ -176,6 +177,7 @@ ol {
         color:#005199;
         font-size: 12px;
         font-weight: normal;
+        outline: none;
     }
 
     h2.type26, h3.type26 {
@@ -669,6 +671,9 @@ ol {
     border-bottom: 1px solid #c8ccdc;
     background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat; 
 }
+.insurance ul li:before{
+    content: none;
+}
 .insurance ul li a {
     display: block;
 }
@@ -734,6 +739,9 @@ ol {
     margin: 0;
     padding: 0;
 }
+.paginator ul li:before {
+    content: none;
+}
 .paginator a {
    color: #005199; 
    text-decoration: none;
@@ -767,6 +775,9 @@ ol {
 ***/
 .search-result-page h2 a{
     dispaly: block;
+}
+.mobile-menu-right .search-form {
+    margin: 0 1em;
 }
 .search-form{
    padding: 10px 42px 5px 0;

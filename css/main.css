@@ -65,7 +65,24 @@ textarea {
 table {
     text-align: left;
     }
-
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 8px;
+    font-size: 11px;
+    color: #666666;
+    position: relative;
+}
+ul li:before {
+    content: "• ";
+    color: #005199;
+    position: absolute;
+    left: 0;
+}
 /*ol, ul {
     margin: 0 0 10px 30px;
     padding: 0;
@@ -126,7 +143,7 @@ ol {
             -o-transition: -o-transform .2s linear;
             transition: transform .2s linear;
             }
-    h1 {
+     h1 {
         color: #113184;
         font-size: 19px;
         font-weight: bold;
@@ -171,7 +188,7 @@ ol {
         padding: 0 0 0 5px;
     }
     p {
-    font-size: 11px;
+    font-size: 11px;        
     color: #666666;
     margin: 0;
     padding: 4px 0;
@@ -183,6 +200,7 @@ ol {
     color: #999999;
     font-size: 9px;
 }
+
 /***
     end Main styles 
 ***/
@@ -201,6 +219,7 @@ ol {
 /*
     end Overlay 
 */
+
 
 
 /***
@@ -601,6 +620,66 @@ ol {
     End of the News Single Page
 ***/
 /*** 
+    Insurance 
+***/
+.insurance {
+
+}
+.insurance .item-block {
+   display: block;
+                position: relative;
+                text-decoration: none;
+                outline: 0 !important;
+                color: #666;
+                font-size: 18px;
+                line-height: 1.2;
+                padding:10px 15px;
+                background: #ffffff;
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc3JSIgc3RvcC1jb2xvcj0iI2VlZjBmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWYwZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 25%, #eef0f6 77%, #eef0f6 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(25%,#ffffff), color-stop(77%,#eef0f6), color-stop(100%,#eef0f6));
+                background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 25%,#eef0f6 77%,#eef0f6 100%);
+                background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 25%,#eef0f6 77%,#eef0f6 100%);
+                background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 25%,#eef0f6 77%,#eef0f6 100%);
+                background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 25%,#eef0f6 77%,#eef0f6 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eef0f6',GradientType=0 );
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                -moz-background-clip: padding;
+                -webkit-background-clip: padding-box;
+                background-clip: padding-box;
+                -moz-box-shadow: 0 1px 1px rgba(16,49,132,.4);
+                -webkit-box-shadow: 0 1px 1px rgba(16,49,132,.4);
+                box-shadow: 0 1px 1px rgba(16,49,132,.4);
+                border: 1px solid rgba(16,49,132,.2); 
+}
+.insurance .item-block {
+    margin: 0 0 15px 0;
+}
+.insurance ul {
+    margin: 0;
+    padding: 0;
+}
+.insurance ul li {
+    list-style: none;
+    margin: 0;
+    padding: 7px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #c8ccdc;
+    background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat; 
+}
+.insurance ul li a {
+    display: block;
+}
+.insurance ul li:last-child {
+    border-bottom: none;
+}
+
+/*** 
+    End of Insurance 
+***/
+/*** 
     News 
 ***/
 .block-item {  
@@ -916,6 +995,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7fb', end
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa5757', endColorstr='#e9020d',GradientType=0 );
             border: 1px solid #e9010d;
             color: #fff;
+        }
+        .blue-but-v-1,
+        a.blue-but-v-1 {
+            border: 1px solid #113184;
+            background: rgb(44,85,191); 
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjNTViZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMTMxODQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top,  rgb(44,85,191) 0%, rgb(17,49,132) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(44,85,191)), color-stop(100%,rgb(17,49,132))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  rgb(44,85,191) 0%,rgb(17,49,132) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  rgb(44,85,191) 0%,rgb(17,49,132) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  rgb(44,85,191) 0%,rgb(17,49,132) 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  rgb(44,85,191) 0%,rgb(17,49,132) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c55bf', endColorstr='#113184',GradientType=0 ); /* IE6-8 */
+            margin: 10px 0;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+        }
+        .blue-but-v-1 span {
+            background: transparent url(../img/read-more-ico-white.png) 100% 50% no-repeat;
+            display: block;
+            background-size: 9px 8px;
+            display: inline-block;
+            padding: 0 15px 0 0;
         }
         .white-but-v-1,
         a.white-but-v-1 {

@@ -37,6 +37,9 @@
     .mobile-menu-right ul li:before {
       content: none;
     }
+    .mobile-menu-left ul li a {
+        background: transparent url(../img/arrow-right.png) right center no-repeat;
+      }
       .mobile-menu-left ul li a,
       .mobile-menu-right ul li a,
       .mobile-menu-left ul li span,
@@ -49,6 +52,7 @@
         color: #01529c;
         font-size: 14px;
       }
+
       /*.mobile-menu-left ul li a,
       .mobile-menu-right ul li a {
         color: #01529c;

@@ -82,7 +82,7 @@
 /*
 	apply resmenu
 */
-	$layout.responsiveMenu({
+	$("#main-wrap").responsiveMenu({
       positionMenu: "right",
       minWidth: 2000,
       closeAfterClick: false,

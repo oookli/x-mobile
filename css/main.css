@@ -125,6 +125,7 @@ ol {
         font: normal 12px/14px Arial, "Helvetica Neue", Helvetica, sans-serif;
         min-width: 312px;
         background-color: #f8f8fb;
+        height: auto;
         }
         .centered-content {
             max-width: 800px;
@@ -825,8 +826,8 @@ ol {
     float: left;
     margin-right: -100px;
     width: 56px;
-    height: 32px;
-    width: 32px;
+    height: 30px;
+    width: 31px;
     padding: 0;
     border-right: 1px solid #cbcbce;
     border-top: 1px solid #cbcbce;
@@ -852,6 +853,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7fb', end
 display: block;
 overflow: hidden;
 z-index: 999;
+}
+.search-form .search-submit input {
+    background: transparent url(../img/ico-search.png) center center no-repeat;
+    background-size: 18px 18px;
+    border: none;
+    height: 30px;
+    width: 31px;
 }
 .search-form .bttn-img {
   background: transparent url(../img/ico-search.png) center center no-repeat; 

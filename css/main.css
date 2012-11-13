@@ -118,14 +118,13 @@ ol {
     Main styles 
 ***/
     html, body {
-        background: #fff;
+        background-color: #f8f8fb;
         height: 100%;
         }
     body {
         font: normal 12px/14px Arial, "Helvetica Neue", Helvetica, sans-serif;
         min-width: 312px;
         background-color: #f8f8fb;
-        height: auto;
         }
         .centered-content {
             max-width: 800px;
@@ -411,7 +410,7 @@ ol {
                 color: #999;
                 font-size: 18px;
                 line-height: 1.2;
-                padding:10px 15px;
+                padding:10px 15px;0
                 }
 /* end Nav-list */
 

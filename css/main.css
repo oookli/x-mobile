@@ -351,6 +351,9 @@ ol {
             margin: 0 0 12px 0;
             padding: 0;
             }
+            .nav-list li:before {
+              content: none;
+            }
             .nav-list a {
                 display: block;
                 position: relative;

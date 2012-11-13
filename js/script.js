@@ -106,6 +106,12 @@ if ($("dl.tabs-block").length){
 			active: false,
 			collapsible: true
 		});
+		$("#accordion3").accordion({
+			autoHeight: false,
+			navigation: true,
+			active: false,
+			collapsible: true
+		});
 		
 		
 	});

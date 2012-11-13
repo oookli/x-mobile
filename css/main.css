@@ -693,6 +693,7 @@ ol {
 }
 .next-page {
    background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat; 
+   cursor: pointer;
 }
 .news-item h2 a {
     color:#005199;
@@ -762,6 +763,7 @@ ol {
     background-size: 25px 25px; 
     width: 25px;
     height:25px;
+    padding: 0;
 }
 
 /*** 
@@ -847,7 +849,9 @@ background: -o-linear-gradient(top,  rgb(246,247,251) 0%,rgb(203,220,236) 100%);
 background: -ms-linear-gradient(top,  rgb(246,247,251) 0%,rgb(203,220,236) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgb(246,247,251) 0%,rgb(203,220,236) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7fb', endColorstr='#cbdcec',GradientType=0 ); /* IE6-8 */
-
+display: block;
+overflow: hidden;
+z-index: 999;
 }
 .search-form .bttn-img {
   background: transparent url(../img/ico-search.png) center center no-repeat; 

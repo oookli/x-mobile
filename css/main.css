@@ -501,21 +501,37 @@ html, body {
 */
 #accordion div {
     font-size: 12px;
-    padding: 0 0 0 5px;
+    padding: 0 0 10px 5px;
+    color: #666666;
     }
-    .blue-light h3, .blue-dark h3 {
-        margin: 0;
-        padding: 5px 0;
-        font-size: 13px;
+.ui-accordion-content-active {
+  border-bottom: 1px dashed #c8ccdc;  
+    }
+    .ui-accordion-content-active:last-child {
+        border: none;
         }
-    .blue-light a {
-        border-bottom: 1px dashed #005199;
-        color: #005199;
-        }
-    .blue-dark a {
-        border-bottom: 1px dashed #113184;
-        color: #113184;
-        }
+        
+.ui-state-active a {
+    border: none!important;
+    }
+
+.blue-light h3, .blue-dark h3 {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 13px;
+    }
+.blue-light h3 {
+    color: #005199;  
+    }
+
+.blue-light a {
+    border-bottom: 1px dashed #005199;
+    color: #005199!important;
+    }
+.blue-dark a {
+    border-bottom: 1px dashed #113184;
+    color: #113184;
+    }
 
 
 /***

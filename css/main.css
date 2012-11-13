@@ -559,11 +559,11 @@ html, body {
     background-attachment: scroll;
     background-clip: border-box;
     background-color: transparent;
-    background-image: url("../img/read-more-ico.png");
+    background-image: url("../img/read-more-ico-02.png");
     background-origin: padding-box;
     background-position: right center;
     background-repeat: no-repeat;
-    background-size: 10px 8px;
+    background-size: 11px 9px;
     color: #005199;
     padding: 0 15px 0 0;
     font-size: 11px;
@@ -730,6 +730,7 @@ html, body {
 .mobile-menu-right .search-form {
     margin: 0 1em;
     }
+
 .search-form{
    padding: 10px 42px 5px 0;
    overflow: hidden;
@@ -745,6 +746,8 @@ html, body {
         }
 
     .search-form .search-input {
+        margin-right: -100px;
+        padding: 7px 7px 8px;
         width: 100%; 
         height: 30px;
         outline: none;
@@ -756,20 +759,20 @@ html, body {
         -moz-border-radius:0px; 
         -khtml-border-radius:0px;
         border-radius:0px;
-        -webkit-border-top-left-radius: 3px;
-        -webkit-border-bottom-left-radius: 3px;
-        -moz-border-radius-topleft: 3px;
-        -moz-border-radius-bottomleft: 3px;
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
+        -webkit-border-top-left-radius: 4px;
+        -webkit-border-bottom-left-radius: 4px;
+        -moz-border-radius-topleft: 4px;
+        -moz-border-radius-bottomleft: 4px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
         font-size: 14px;
+        font-family: arial;
         font-style: italic;
         color: #999999;
         -moz-box-shadow: 0px 1px 2px -1px #999999 inset;
         -webkit-box-shadow: 0px 1px 2px -1px #999999 inset;
         box-shadow: 0px 1px 2px -1px #999999 inset;
         }
-
     .search-form .search-submit {
         float: left;
         margin-right: -100px;
@@ -784,12 +787,12 @@ html, body {
         border-right: 1px solid #cbcbce;
         border-top: 1px solid #cbcbce;
         border-bottom: 1px solid #cbcbce;
-        -webkit-border-top-right-radius: 3px;
-        -webkit-border-bottom-right-radius: 3px;
-        -moz-border-radius-topright: 3px;
-        -moz-border-radius-bottomright: 3px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
+        -webkit-border-top-right-radius: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        -moz-border-radius-topright: 4px;
+        -moz-border-radius-bottomright: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
         border-left: none;
         cursor: pointer;
         background: rgb(246,247,251); /* Old browsers */
@@ -818,26 +821,30 @@ html, body {
             background: linear-gradient(to bottom,  rgb(203,220,236) 0%,rgb(246,247,251) 100%); /* W3C */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbdcec', endColorstr='#f6f7fb',GradientType=0 ); /* IE6-8 */
             }
-            .search-form .search-submit input {
-                background: transparent url(../img/ico-search.png) center center no-repeat;
-                background-size: 18px 18px;
-                border: none;
-                height: 30px;
-                width: 31px;
-                }
+        .search-form .search-submit input {
+            background: transparent url(../img/ico-search.png) center center no-repeat;
+            background-size: 18px 18px;
+            border: none;
+            height: 30px;
+            width: 31px;
+            }
     .search-form .bttn-img {
         background: transparent url(../img/ico-search.png) center center no-repeat; 
         background-size: 18px 18px;  
         }
-
-    .search-count {
-        padding: 2px 0;
+.search-count {
+    padding: 2px 0;
+    }
+    .search-count p {
+        font-family: Arial;
+        font-size: 12px;
+        color:#005199;
         }
-        .search-count p {
-            font-family: Arial;
-            font-size: 12px;
-            color:#005199;
-            }
+.mobile-menu-right .search-form .search-input,
+.mobile-menu-right .search-form .search-submit {
+    border-color: #1e6ab0;
+    }
+
 
 /*** 
     Footer 

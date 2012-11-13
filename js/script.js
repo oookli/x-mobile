@@ -100,13 +100,13 @@ if ($("dl.tabs-block").length){
 			active: false,
 			collapsible: true
 		});
-		$("#accordion2").accordion({
+		$("#accordion11").accordion({
 			autoHeight: false,
 			navigation: true,
 			active: false,
 			collapsible: true
 		});
-		$("#accordion3").accordion({
+		$("#accordion111").accordion({
 			autoHeight: false,
 			navigation: true,
 			active: false,

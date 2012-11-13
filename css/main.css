@@ -552,7 +552,17 @@ ol {
 /* Accordion */
 #accordion div {
   font-size: 12px;
-    padding: 0 0 0 5px;
+    padding: 0 0 10px 5px;
+    color: #666666;
+}
+.ui-accordion-content-active {
+  border-bottom: 1px dashed #c8ccdc;  
+}
+.ui-accordion-content-active:last-child {
+    border: none;
+}
+.ui-state-active a {
+    border: none!important;
 }
  .blue-light h3, .blue-dark h3 {
     margin: 0;
@@ -561,8 +571,11 @@ ol {
  }
  .blue-light a {
         border-bottom: 1px dashed #005199;
-        color: #005199;
+        color: #005199!important;
     }
+.blue-light h3 {
+  color: #005199;  
+}
 .blue-dark a {
         border-bottom: 1px dashed #113184;
         color: #113184;

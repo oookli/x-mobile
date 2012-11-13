@@ -624,11 +624,11 @@ ol {
      background-attachment: scroll;
     background-clip: border-box;
     background-color: transparent;
-    background-image: url("../img/read-more-ico.png");
+    background-image: url("../img/read-more-ico-02.png");
     background-origin: padding-box;
     background-position: right center;
     background-repeat: no-repeat;
-    background-size: 10px 8px;
+    background-size: 11px 9px;
     color: #005199;
     padding: 0 15px 0 0;
     font-size: 11px;
@@ -832,12 +832,12 @@ ol {
 -moz-border-radius:0px; 
 -khtml-border-radius:0px;
 border-radius:0px;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     font-size: 14px;
     font-family: arial;
     font-style: italic;
@@ -860,12 +860,12 @@ border-radius:0px;
     border-right: 1px solid #cbcbce;
     border-top: 1px solid #cbcbce;
     border-bottom: 1px solid #cbcbce;
-    -webkit-border-top-right-radius: 3px;
-    -webkit-border-bottom-right-radius: 3px;
-    -moz-border-radius-topright: 3px;
-    -moz-border-radius-bottomright: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
     border-left: none;
     cursor: pointer;
      background: rgb(246,247,251); /* Old browsers */
@@ -914,7 +914,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbdcec', end
     font-size: 12px;
     color:#005199;
 }
-
+.mobile-menu-right .search-form .search-input,
+.mobile-menu-right .search-form .search-submit {
+    border-color: #1e6ab0;
+}
 /*** 
     End of Search Result Page 
 ***/

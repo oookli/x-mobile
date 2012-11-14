@@ -573,7 +573,7 @@ html, body {
         text-decoration: none;
         outline: 0 !important;
         color: #666;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 1.2;
         padding:10px 15px;
         background: #ffffff;
@@ -946,6 +946,58 @@ color: #333333;
     border-color: #1e6ab0;
     }
 
+/* checkbox styling */
+    .checkbox-location {
+        text-align: center;
+    }
+        .checkbox-cont {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+        }
+            .checkbox-wrapper {
+                display: inline-block;
+                *display: inline;
+                *zoom: 1;
+                width: 27px;
+                height: 27px;
+                background: transparent url(../img/checkbox-but.png) 0 0 no-repeat;
+                background-size: 69px 26px;
+                position: relative;
+            }
+                .checkbox-wrapper input[type='checkbox'] {
+                    -moz-opacity: 0;
+                    filter: alpha(opacity=0);
+                    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+                    opacity: 0;
+                    width: 27px;
+                    height: 27px;
+                    display: inline-block;
+                    *display: inline;
+                    *zoom: 1;
+                    position: absolute;
+                    z-index: 200;
+                    left: 0;
+                    top: 0;
+                }
+                .checkbox-wrapper .checkbox-block {
+                    width: 27px;
+                    height: 27px;
+                    background: transparent url(../img/checkbox-but.png) 0 0 no-repeat;
+                    background-size: 69px 26px;
+                    position: absolute;
+                    z-index: 100;
+                    left: 0;
+                    top: 0;
+                }
+                .checkbox-wrapper .checkbox-block.checked {
+                    background: transparent url(../img/checkbox-but.png) -44px 0 no-repeat;
+                    background-size: 69px 26px;
+                }
+            .checkbox-wrapper label {
+
+            }
+/* end checkbox styling */
 
 /*** 
     Footer 

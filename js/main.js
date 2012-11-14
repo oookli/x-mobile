@@ -31,13 +31,19 @@ $('.flexslider').flexslider({
 
 /*==============================
 	Tabs block
-*/				
+*/
 if ($("dl.tabs-block").length){
 	$('dl.tabs-block dt.tab-title ').click(function(){
 		$(this).siblings().removeClass('current').end()
 		.next('dd.tab-content').andSelf().addClass('current');
 	});
 }
-
+$(".checkbox-wrapper").on("change","input[type='checkbox']",function(){
+	var $thisParent = $(this).next();
+	console.log($thisParent);
+	(!$thisParent.hasClass("checked"))?
+		$thisParent.addClass("checked")
+		:$thisParent.removeClass("checked");
+});
 /*--------------------------------------------------------*/
 })(jQuery);

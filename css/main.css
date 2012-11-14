@@ -1002,20 +1002,23 @@ color: #333333;
 /* checkbox styling */
     .checkbox-location {
         text-align: center;
+        padding: 20px 0 11px 0;
     }
         .checkbox-cont {
             display: inline-block;
             *display: inline;
             *zoom: 1;
+            margin-right: 16px;
+        }
+        .checkbox-cont:last-child {
+            margin-right: 0;
         }
             .checkbox-wrapper {
                 display: inline-block;
                 *display: inline;
                 *zoom: 1;
                 width: 27px;
-                height: 27px;
-                background: transparent url(../img/checkbox-but.png) 0 0 no-repeat;
-                background-size: 69px 26px;
+                height: 17px;
                 position: relative;
             }
                 .checkbox-wrapper input[type='checkbox'] {

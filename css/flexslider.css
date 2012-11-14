@@ -57,7 +57,7 @@ html[xmlns] .slides {display: block;}
 	position: relative;
 	zoom: 1;
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 0 auto 4px auto;
 }
 .flex-viewport {margin: 0 auto;
     max-height: 600px;
@@ -84,14 +84,19 @@ html[xmlns] .slides {display: block;}
 	width: 100%;
 	position: absolute;
 	bottom: -2px;
-	text-align: center;
+	text-align: justify;
 	background-color: #9ca9cb;
+	height: 2px;
+	font-size: 2px;
+	line-height: 2px;
 }
 .flex-control-nav li {
-	margin: 0 6px;
-	float: left;
+	margin: 0 2%;
 	width: 12%;
 	height: 2px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
 .flex-control-paging li a {
 	display: block;

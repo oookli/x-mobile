@@ -33,7 +33,21 @@ $wrap.responsiveMenu({
 
 $('.flexslider').flexslider({
     animation: "slide",
-    directionNav: false
+    directionNav: false,
+    start: function(slider){
+			var sliderWidth = parseFloat(100/slider.count,10),
+					sliderMargin = parseFloat(sliderWidth/26,10),
+					fixWidth = parseFloat(sliderMargin/slider.count,10),
+					TotalWidth=0;
+			console.dir(slider.currentSlide);
+			$(slider.controlNav).parent().each(function(){
+				$(this).css({
+					"width": sliderWidth-(sliderMargin*2)+(fixWidth*2)+"%",
+					"margin": "0 "+(($(this).is(":last-child"))?0:sliderMargin)+"%"+" 0 "+(($(this).is(":first-child"))?0:sliderMargin)+"%"
+				});
+			});
+			// console.log(sliderWidth-(sliderMargin*2),sliderMargin);
+    }
 });
 
 
@@ -156,5 +170,16 @@ $(".checkbox-cont")
 		$thisPrev.find(".checkbox-block").toggleClassChange("checked");
 		console.log($thisInput.is(":checked"));
 	});
+$(".sel-location").on("click",".sel-block .select-arrow",function(event){
+	event.preventDefault();
+	var element = $(this).prev()[0], worked = false;
+	if (document.createEvent) {
+		var e = document.createEvent("MouseEvents");
+		e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+		worked = element.dispatchEvent(e);
+	} else if (element.fireEvent) {
+		worked = element.fireEvent("onmousedown");
+	}
+});
 /*--------------------------------------------------------*/
 })(jQuery);

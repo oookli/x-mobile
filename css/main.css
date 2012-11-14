@@ -154,7 +154,7 @@ html, body {
         -o-transition: -o-transform .2s linear;
         transition: transform .2s linear;
         z-index: 1000;
-        background-color: #fff;
+        background-color: #F8F8FB;
         }
         #layout {
             min-height: 100%;
@@ -784,12 +784,51 @@ color: #333333;
     Search Result Page 
 ***/
 .search-result-page h2 a{
-    dispaly: block;
+    display: block;
     }
+.mobile-menu-right .search-form-li {
+    background-color: #276bab;
+    -webkit-box-shadow: inset 2px 1px 3px rgba(0, 0, 0, .36);
+    -moz-box-shadow: inset 2px 1px 3px rgba(0, 0, 0, .36);
+    box-shadow: inset 2px 1px 3px rgba(0, 0, 0, .36);
+}
 .mobile-menu-right .search-form {
     margin: 0 1em;
+    background-color: #276bab;
     }
-
+.mobile-menu-right .search-form .search-input {
+    background-color: #004d95;
+    color: #fff;
+    -moz-box-shadow:
+        0 1px 1px rgba(255,255,255,.4),
+        inset 0 1px 1px #003668;
+    -webkit-box-shadow:
+        0 1px 1px rgba(255,255,255,.4),
+        inset 0 1px 1px #003668;
+    box-shadow:
+        0 1px 1px rgba(255,255,255,.4),
+        inset 0 1px 1px #003668;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    height: 28px;
+}
+.mobile-menu-right .search-form .search-input::-webkit-input-placeholder,
+.mobile-menu-right .search-form .search-input::-moz-placeholder {
+    color: #4f7eb1;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);   
+}
+.mobile-menu-right .search-form .search-submit {
+    -moz-box-shadow:
+        0 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow:
+        0 1px 1px rgba(0,0,0,.1);
+    box-shadow:
+        0 1px 1px rgba(0,0,0,.1);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
 .search-form{
    padding: 10px 42px 5px 0;
    overflow: hidden;
@@ -831,6 +870,9 @@ color: #333333;
         -moz-box-shadow: 0px 1px 2px -1px #999999 inset;
         -webkit-box-shadow: 0px 1px 2px -1px #999999 inset;
         box-shadow: 0px 1px 2px -1px #999999 inset;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
         }
     .search-form .search-submit {
         float: left;

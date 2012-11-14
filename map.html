@@ -29,46 +29,60 @@
         <div class="hidden" id="overlay"></div>
         <!-- nd of Overlay -->
         <div id="main-wrap">
-        <!-- Header -->
-        <header id="header">
-            <div class="centered-content">
-                <div id="header-content" class="clearfix">
-                    <a href="index.html"><img id="logo" src="img/blank.gif"></a>
-                    <!-- Main navigation -->
-                    <a href="#" id="main-nav-trigger" class="active-"></a> 
-                    <nav id="main-nav" class="hidden">
-                         <ul class="nav-list">
-                            <li class="search-form-wrap">
-                                <div class="search-form">
-                                    <input class="search-input" type="search" />
-                                    <div class="search-submit">
-                                        <input type="submit" value="" onclick="location.href='search-results.html';" /> 
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="insurance.html">Страхування</a></li>
-                            <li><a href="news.html">Новини</a></li>
-                            <li><a href="#">Компанія</a></li>
-                            <li class="current"><a href="offices.html">Карта офісів</a></li>
-                            <li><a href="contacts.html">Контакти</a></li>
-                        </ul>
-                    </nav>
-                    <!-- End of Main navigation -->
-                </div>
+            <!-- Layout -->
+            <div id="layout">
+                <!-- Header -->
+                <header id="header">
+                    <div class="centered-content">
+                        <div id="header-content" class="clearfix">
+                            <a href="index.html"><img id="logo" src="img/blank.gif"></a>
+                            <!-- Main navigation -->
+                            <a href="#" id="main-nav-trigger" class="active-"></a> 
+                            <nav id="main-nav" class="hidden">
+                                 <ul class="nav-list">
+                                    <li class="search-form-wrap">
+                                        <div class="search-form">
+                                            <input class="search-input" type="search" />
+                                            <div class="search-submit">
+                                                <input type="submit" value="" onclick="location.href='search-results.html';" /> 
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="index.html">Головна</a></li>
+                                    <li><a href="insurance.html">Страхування</a></li>
+                                    <li><a href="news.html">Новини</a></li>
+                                    <li><a href="#">Компанія</a></li>
+                                    <li class="current"><a href="offices.html">Карта офісів</a></li>
+                                    <li><a href="contacts.html">Контакти</a></li>
+                                </ul>
+                            </nav>
+                            <!-- End of Main navigation -->
+                        </div>
+                    </div>
+                </header>
+                <!-- End of Header -->
+                <!-- Content -->
+                <section id="content">
+                    <div class="centered-content">
+
+                        <!-- Map page content -->
+                        <section id="map-page">
+                            <a class="map-back-button" href="offices.html">Повернутися</a>
+
+                            <figure id="map-wrap"></figure>
+                        </section>
+                        <!-- End of Map page content -->
+                    </div>
+                </section>
+                <!-- End of Content -->
             </div>
-        </header>
-        <!-- End of Header -->
-        <div class="tab-content-inner">
-           <div class="map">
-               <iframe width="100%" height="90%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=uk&amp;geocode=&amp;q=Kyiv,+%D0%BC%D1%96%D1%81%D1%82%D0%BE+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0&amp;aq=0&amp;oq=kyi&amp;sll=37.0625,-95.677068&amp;sspn=58.598104,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BC%D1%96%D1%81%D1%82%D0%BE+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0&amp;t=m&amp;ll=50.450072,30.523453&amp;spn=0.038257,0.137329&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe>
-           </div> 
-        </div>
+            <!-- End of Layout -->
         </div>
         <script src="js/vendor/jquery-1.8.2.min.js"></script>
         <script src="js/helper.js"></script>
         <script src="js/plugins/jquery.flexslider-min.js"></script>
         <script src="js/plugins/resmenu.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

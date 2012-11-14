@@ -170,6 +170,11 @@ $(".checkbox-cont")
 		$thisPrev.find(".checkbox-block").toggleClassChange("checked");
 		console.log($thisInput.is(":checked"));
 	});
+
+
+/*==============================
+	Custom select
+*/	
 $(".sel-location").on("click",".sel-block .select-arrow",function(event){
 	event.preventDefault();
 	var element = $(this).prev()[0], worked = false;

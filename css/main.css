@@ -534,7 +534,7 @@ html, body {
     }
 .prev {
    background: transparent url(../img/icon-blue-arrow-small-back.png) 0 4px no-repeat;
-    background-size: 8px 13px; 
+    background-size: 8px 14px; 
     padding: 0 0 0 15px;
     }
 
@@ -607,7 +607,8 @@ html, body {
         padding: 0;
         font-size: 13px;
         border-bottom: 1px solid #c8ccdc;
-        background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat; 
+        background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat;
+        background-size: 8px 14px;
         }
         .insurance ul li:before{
             display: none;
@@ -633,7 +634,8 @@ html, body {
         border: none;
         }
 .next-page {
-   background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat; 
+   background: transparent url(../img/icon-blue-arrow-small.png) right center no-repeat;
+   background-size: 8px 14px;
    cursor: pointer;
     }
 .news-item h2 a {
@@ -775,11 +777,11 @@ color: #333333;
                 position: absolute;
                 top: 50%;
                 left: 5px;
-                margin: -5px 0;
+                margin: -6px 0;
                 width: 8px;
                 height: 13px;
                 background: url(../img/icon-blue-arrow-small-back.png);
-                background-size: 8px 13px;
+                background-size: 8px 14px;
                 }
             
 

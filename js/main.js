@@ -60,7 +60,6 @@ if ($("dl.tabs-block").length){
 	if (!$('#map-wrap').length) {
 		return false;
 	}
-	console.log('navigator.geolocation ',navigator.geolocation);
 
 	// Check if geolocation is supported
 	if (navigator.geolocation) {
@@ -80,7 +79,6 @@ if ($("dl.tabs-block").length){
 
 	// Geolocation is supported
 	function success(position) {
-		console.log('success' , position);
 		if ($mapWrap.is('.success')) {
 			// not sure why we're hitting this twice in FF, I think it's to do with a cached result coming back    
 			return;
@@ -91,7 +89,6 @@ if ($("dl.tabs-block").length){
 
 	// Goelocation error handing
 	function showError(error)  {
-		console.log('showError');
 		switch(error.code)    {
 		case error.PERMISSION_DENIED:
 		  console.log("User denied the request for Geolocation.");
@@ -111,7 +108,6 @@ if ($("dl.tabs-block").length){
 
 	// Show map
 	function showMap (position) {
-		console.log('showMap',position); 
 		var latlng;
 		
 		var myOptions = {

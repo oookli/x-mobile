@@ -51,17 +51,6 @@ $('.flexslider').flexslider({
 });
 
 
-
-/*==============================
-	Tabs block
-*/
-if ($("dl.tabs-block").length){
-	$('dl.tabs-block dt.tab-title ').click(function(){
-		$(this).siblings().removeClass('current').end()
-		.next('dd.tab-content').andSelf().addClass('current');
-	});
-}
-
 /*==============================
 	Geolocation support
 */

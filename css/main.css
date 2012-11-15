@@ -1280,6 +1280,32 @@ a.white-but-v-1 {
     padding:4px 7px; 
 }
 
+/*
+    Type: empty button with icon
+*/
+.button.button.empty {
+    min-width: 8px;
+    min-height: 12px;
+    }
+
+
+/*
+    Icons
+*/
+.icon {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    background: #fc0;
+    margin: -5px 5px -5px 0;
+    width: 18px;
+    height: 18px;
+    }
+
+    /* State: icon in empty button */
+    .button.empty .icon {
+        margin: -5px;
+        }
 
 /* ==========================================================================
    Helper classes

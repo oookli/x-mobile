@@ -1187,6 +1187,100 @@ a.white-but-v-1 {
         margin-right: 6px;
         }
 
+
+
+/***
+    Buttons
+***/
+
+.button {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-decoration: none;
+    outline: 0 !important;
+    padding: 7px 10px;
+    border: #c8ccdc solid 1px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    background: #EEF0F6;
+    -webkit-box-shadow: 0 7px 3px 0px rgba(255, 255, 255, .8) inset;
+            box-shadow: 0 7px 3px 0px rgba(255, 255, 255, .8) inset;
+
+    color: #005199;
+    font-size: 12px;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    }
+    .button:active {
+        -webkit-box-shadow: 0 -7px 3px 0px rgba(255, 255, 255, .8) inset;
+            box-shadow: 0 -7px 3px 0px rgba(255, 255, 255, .8) inset;
+        }
+
+    /* State: pushed */
+    .button.pushed,
+    .button.pushed:active {
+        background: #EDF1F7;
+        box-shadow: 0 1px 1px #C9CFE3 inset;
+        color: #999999;
+        cursor: default;
+        filter: none;
+        }
+
+
+/* Type: Button red */
+.button.red {
+    color: #fff;
+    text-shadow:none;
+    border: 1px solid #EB0A14;
+    background: #EB0A14;
+    -webkit-box-shadow: 0 7px 5px 0px rgba(255, 255, 255, .4) inset;
+            box-shadow: 0 7px 5px 0px rgba(255, 255, 255, .4) inset;
+    }
+    .button.red:active {
+        -webkit-box-shadow: 0 -7px 5px 0px rgba(255, 255, 255, .4) inset;
+            box-shadow: 0 -7px 5px 0px rgba(255, 255, 255, .4) inset;
+        }
+    /* State: red button pushed */
+    .button.red.pushed,
+    .button.red.pushed:active {
+        background: #dc3c43;
+        color: #eee;
+        text-shadow:0 -1px 0 #dc3c43;
+        -webkit-box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .1) inset;
+                box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .1) inset;
+        }
+
+/* Type: Button red */
+.button.blue {
+    color: #fff;
+    text-shadow:none;
+    border: 1px solid #113184;
+    background: #113184;
+    -webkit-box-shadow: 0 8px 7px 0px rgba(255, 255, 255, .2) inset;
+            box-shadow: 0 8px 7px 0px rgba(255, 255, 255, .2) inset;
+    }
+    .button.blue:active {
+        -webkit-box-shadow: 0 -8px 7px 0px rgba(255, 255, 255, .2) inset;
+            box-shadow: 0 -8px 7px 0px rgba(255, 255, 255, .2) inset;
+        }
+    /* State: red button pushed */
+    .button.blue.pushed,
+    .button.blue.pushed:active {
+        background: #526084;
+        color: #eee;
+        text-shadow:0 -1px 0 #113184;
+        -webkit-box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .2) inset;
+                box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .2) inset;
+        }
+
+/* Type: Button small */
+.button.small {
+    padding:4px 7px; 
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -669,7 +669,7 @@ Offices
 
 */
   #offices-page h3 {
-            margin:0 0 7px 0;
+            margin:0 -30px 7px 0;
         }
 #offices-page {
     position: relative;
@@ -678,20 +678,22 @@ Offices
     border-bottom: 1px dashed #c8ccdc;
     position: relative;
     height: 100%;
-    padding: 7px 0;
+    padding: 7px 30px 7px 0;
 }
 #offices-page .block-item:last-child {
     border-bottom: none;
 }
 
 .show-map {
-    display: block;
+    position: absolute;
+    top:50%;
+    right: 0;
     background: transparent url(../img/ico-show-map.png) right center no-repeat; 
     height: 28px;
     width: 28px;
     float: right;
     background-size: 28px 28px;
-    margin-top: 15px;
+    margin-top: -14px;
 }
 .sel-location {
     padding: 15px 0;
@@ -1006,20 +1008,24 @@ Offices
                 border-color: #1e6ab0;
                 }
 
-/* checkbox styling */
+
+/*
+    Checkbox styling
+*/
     .checkbox-location {
         text-align: center;
         padding: 20px 0 11px 0;
-    }
+        white-space: nowrap;
+        }
         .checkbox-cont {
             display: inline-block;
             *display: inline;
             *zoom: 1;
             margin-right: 16px;
-        }
+            }
         .checkbox-cont:last-child {
-            margin-right: 0;
-        }
+            margin-right: -10px;
+            }
             .checkbox-wrapper {
                 display: inline-block;
                 *display: inline;
@@ -1027,7 +1033,7 @@ Offices
                 width: 27px;
                 height: 17px;
                 position: relative;
-            }
+                }
                 .checkbox-wrapper input[type='checkbox'] {
                     -moz-opacity: 0;
                     filter: alpha(opacity=0);
@@ -1042,7 +1048,7 @@ Offices
                     z-index: 200;
                     left: 0;
                     top: 0;
-                }
+                    }
                 .checkbox-wrapper .checkbox-block {
                     width: 27px;
                     height: 27px;
@@ -1052,14 +1058,13 @@ Offices
                     z-index: 100;
                     left: 0;
                     top: 0;
-                }
-                .checkbox-wrapper .checkbox-block.checked {
-                    background: transparent url(../img/checkbox-but.png) -44px 0 no-repeat;
-                    background-size: 69px 26px;
-                }
-            .checkbox-wrapper label {
-
-            }
+                    }
+                    .checkbox-wrapper .checkbox-block.checked {
+                        background: transparent url(../img/checkbox-but.png) -44px 0 no-repeat;
+                        background-size: 69px 26px;
+                        }
+                .checkbox-wrapper label {
+                    }
 /* end checkbox styling */
 
 /*** 
@@ -1124,7 +1129,7 @@ Offices
                     position: absolute;
                     top: -1px;
                     left: 41px;
-                }
+                    }
 
 /***
     Common blocks

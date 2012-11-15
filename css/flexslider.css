@@ -28,7 +28,6 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
 	} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides > li:before {
     content: none;
@@ -62,9 +61,23 @@ html[xmlns] .slides {display: block;}
 .flex-viewport {margin: 0 auto;
     max-height: 600px;
     max-width: 800px;
-    min-width: 240px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
-.loading .flex-viewport {max-height: 300px;}
-.flexslider .slides {zoom: 1;}
+    min-width: 240px; 
+    -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;
+    position: relative;
+    background: #fff;
+    padding-top: 39.5%;
+    overflow: hidden;
+    background: url(../img/ajax-loader.gif) no-repeat 50% 50%;
+	background-size: 16px 16px;
+	}
+.loading .flex-viewport {
+	}
+.flexslider .slides {
+	zoom: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
 
 .carousel li {margin-right: 5px}
 

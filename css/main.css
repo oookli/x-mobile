@@ -283,7 +283,7 @@ html, body {
            -moz-box-sizing: border-box;
                 box-sizing: border-box;
         }
-       .nav-list li {
+     /*  .nav-list li {
             margin: 0 0 12px 0;
             padding: 0;
             }
@@ -350,7 +350,51 @@ html, body {
                 font-size: 18px;
                 line-height: 1.2;
                 padding:10px 15px;0
-                }
+                }*/
+            .gradient-block {
+                margin: 0 0 12px 0;
+                padding: 0;
+                position: relative;
+                text-decoration: none;
+                outline: 0 !important;
+                color: #666;
+                font-size: 16px;
+                line-height: 1.2;
+                text-shadow: 0 1px 1px rgba(255,255,255,.75);
+                padding: 8px 20px;
+                background: #ffffff;
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc3JSIgc3RvcC1jb2xvcj0iI2VlZjBmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWYwZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 25%, #eef0f6 77%, #eef0f6 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(25%,#ffffff), color-stop(77%,#eef0f6), color-stop(100%,#eef0f6));
+                background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 25%,#eef0f6 77%,#eef0f6 100%);
+                background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 25%,#eef0f6 77%,#eef0f6 100%);
+                background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 25%,#eef0f6 77%,#eef0f6 100%);
+                background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 25%,#eef0f6 77%,#eef0f6 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eef0f6',GradientType=0 );
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                -moz-background-clip: padding;
+                -webkit-background-clip: padding-box;
+                background-clip: padding-box;
+                -moz-box-shadow: 0 1px 1px rgba(16,49,132,.2);
+                -webkit-box-shadow: 0 1px 1px rgba(16,49,132,.2);
+                box-shadow: 0 1px 1px rgba(16,49,132,.2);
+                border: 1px solid rgba(16,49,132,.2); 
+            }
+            .gradient-block a {
+                display: block;
+            }
+            .arrow-right:after  {
+                    position: absolute;
+                    right: 14px;
+                    top: 0;
+                    content: "";
+                    background: url(../img/arrow-right.png) no-repeat 0 50%;
+                    height: 100%;
+                    width: 9px;
+                    background-size: 8px 14px;
+            }
 
 /***
     Content
@@ -400,10 +444,8 @@ html, body {
 /*** 
     Insurance 
 ***/
-.insurance {
 
-    }
-    .insurance .item-block {
+   /* .insurance .item-block {
         display: block;
         position: relative;
         text-decoration: none;
@@ -432,8 +474,11 @@ html, body {
         box-shadow: 0 1px 1px rgba(16,49,132,.4);
         border: 1px solid rgba(16,49,132,.2); 
         margin: 0 0 15px 0;
-        }
+        }*/
 
+.item-block {
+    font-size: 14px;
+}
 .insurance ul {
     margin: 0;
     padding: 0;
@@ -444,8 +489,6 @@ html, body {
         padding: 0;
         font-size: 13px;
         border-bottom: 1px solid #c8ccdc;
-        background: transparent url(../img/arrow-right.png) right center no-repeat;
-        background-size: 8px 14px;
         }
         .insurance ul li:before{
             display: none;
@@ -506,13 +549,13 @@ html, body {
 Offices 
 
 */
-  #offices-page h3 {
+ /* #offices-page h3 {
             margin:0 -30px 7px 0;
-        }
+        }*/
 #offices-page {
     position: relative;
 }
-#offices-page .block-item {
+/*#offices-page .block-item {
     border-bottom: 1px dashed #c8ccdc;
     position: relative;
     height: 100%;
@@ -520,8 +563,21 @@ Offices
 }
 #offices-page .block-item:last-child {
     border-bottom: none;
+}*/
+.article-item {
+    position: relative;
+    height: 100%;
+    padding: 7px 30px 7px 0;
 }
-
+.article-item h3 {
+  margin: 3px -30px 7px 0;  
+}
+.bd_01 {
+    border-bottom: 1px dashed #c8ccdc;
+}
+.bd_02 {
+    border-bottom: 1px solid #c8ccdc;
+}
 .show-map {
     position: absolute;
     top:50%;
@@ -1210,6 +1266,126 @@ a.white-but-v-1 {
             .block-with-right-elem .right-elem span {
                 display: block;
             }
+
+
+
+/***
+    Buttons
+***/
+
+.button {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-decoration: none;
+    outline: 0 !important;
+    padding: 7px 10px;
+    border: #c8ccdc solid 1px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    background: #EEF0F6;
+    -webkit-box-shadow: 0 7px 3px 0px rgba(255, 255, 255, .8) inset;
+            box-shadow: 0 7px 3px 0px rgba(255, 255, 255, .8) inset;
+
+    color: #005199;
+    font-size: 12px;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    }
+    .button:active {
+        -webkit-box-shadow: 0 -7px 3px 0px rgba(255, 255, 255, .8) inset;
+            box-shadow: 0 -7px 3px 0px rgba(255, 255, 255, .8) inset;
+        }
+
+    /* State: pushed */
+    .button.pushed,
+    .button.pushed:active {
+        background: #EDF1F7;
+        box-shadow: 0 1px 1px #C9CFE3 inset;
+        color: #999999;
+        cursor: default;
+        filter: none;
+        }
+
+
+/* Type: Button red */
+.button.red {
+    color: #fff;
+    text-shadow:none;
+    border: 1px solid #EB0A14;
+    background: #EB0A14;
+    -webkit-box-shadow: 0 7px 5px 0px rgba(255, 255, 255, .4) inset;
+            box-shadow: 0 7px 5px 0px rgba(255, 255, 255, .4) inset;
+    }
+    .button.red:active {
+        -webkit-box-shadow: 0 -7px 5px 0px rgba(255, 255, 255, .4) inset;
+            box-shadow: 0 -7px 5px 0px rgba(255, 255, 255, .4) inset;
+        }
+    /* State: red button pushed */
+    .button.red.pushed,
+    .button.red.pushed:active {
+        background: #dc3c43;
+        color: #eee;
+        text-shadow:0 -1px 0 #dc3c43;
+        -webkit-box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .1) inset;
+                box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .1) inset;
+        }
+
+/* Type: Button red */
+.button.blue {
+    color: #fff;
+    text-shadow:none;
+    border: 1px solid #113184;
+    background: #113184;
+    -webkit-box-shadow: 0 8px 7px 0px rgba(255, 255, 255, .2) inset;
+            box-shadow: 0 8px 7px 0px rgba(255, 255, 255, .2) inset;
+    }
+    .button.blue:active {
+        -webkit-box-shadow: 0 -8px 7px 0px rgba(255, 255, 255, .2) inset;
+            box-shadow: 0 -8px 7px 0px rgba(255, 255, 255, .2) inset;
+        }
+    /* State: red button pushed */
+    .button.blue.pushed,
+    .button.blue.pushed:active {
+        background: #526084;
+        color: #eee;
+        text-shadow:0 -1px 0 #113184;
+        -webkit-box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .2) inset;
+                box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .2) inset;
+        }
+
+/* Type: Button small */
+.button.small {
+    padding:4px 7px; 
+}
+
+/*
+    Type: empty button with icon
+*/
+.button.button.empty {
+    min-width: 8px;
+    min-height: 12px;
+    }
+
+
+/*
+    Icons
+*/
+.icon {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    background: #fc0;
+    margin: -5px 5px -5px 0;
+    width: 18px;
+    height: 18px;
+    }
+
+    /* State: icon in empty button */
+    .button.empty .icon {
+        margin: -5px;
+        }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -1186,7 +1186,30 @@ a.white-but-v-1 {
         *zoom: 1;
         margin-right: 6px;
         }
-
+    .icon-show-map {
+        background: transparent url(../img/ico-show-map-new.png) right center no-repeat;
+        height: 17px;
+        width: 18px;
+        background-size: 17px 18px;
+    }
+/*** 
+    modules styles
+***/
+.block-with-right-elem {
+        padding-right: 30px !important;
+        position: relative;
+    }
+        .block-with-right-elem .right-elem {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            height: 28px;
+            width: 28px;
+            margin-top: -14px;
+        }
+            .block-with-right-elem .right-elem span {
+                display: block;
+            }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -567,17 +567,18 @@ Offices
 .article-item {
     position: relative;
     height: 100%;
-    padding: 7px 30px 7px 0;
-}
-.article-item h3 {
-  margin: 3px -30px 7px 0;  
-}
-.bd_01 {
-    border-bottom: 1px dashed #c8ccdc;
-}
-.bd_02 {
-    border-bottom: 1px solid #c8ccdc;
-}
+    padding: 7px 0px 7px 0;
+    }
+    .article-item h3 {
+      margin: 3px -30px 7px 0;  
+        }
+
+    .bd_01 {
+        border-bottom: 1px dashed #c8ccdc;
+    }
+    .bd_02 {
+        border-bottom: 1px solid #c8ccdc;
+    }
 .show-map {
     position: absolute;
     top:50%;
@@ -588,7 +589,7 @@ Offices
     float: right;
     background-size: 28px 28px;
     margin-top: -14px;
-}
+    }
 .sel-location {
     padding: 15px 0;
     border-bottom: 1px solid #c8ccdc;
@@ -1242,31 +1243,6 @@ a.white-but-v-1 {
         *zoom: 1;
         margin-right: 6px;
         }
-    .icon-show-map {
-        background: transparent url(../img/ico-show-map-new.png) right center no-repeat;
-        height: 17px;
-        width: 18px;
-        background-size: 17px 18px;
-    }
-/*** 
-    modules styles
-***/
-.block-with-right-elem {
-        padding-right: 30px !important;
-        position: relative;
-    }
-        .block-with-right-elem .right-elem {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            height: 28px;
-            width: 28px;
-            margin-top: -14px;
-        }
-            .block-with-right-elem .right-elem span {
-                display: block;
-            }
-
 
 
 /***
@@ -1368,7 +1344,37 @@ a.white-but-v-1 {
     min-height: 12px;
     }
 
-
+/*
+    Type: Buttons group
+*/
+.buttons-group {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    }
+    .buttons-group .button{
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        }
+       .buttons-group .button:first-child {
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            }
+        .buttons-group .button:last-child {
+            -webkit-border-top-right-radius: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+            -moz-border-radius-topright: 3px;
+            -moz-border-radius-bottomright: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            }
 /*
     Icons
 */
@@ -1386,6 +1392,33 @@ a.white-but-v-1 {
     .button.empty .icon {
         margin: -5px;
         }
+
+
+    .icon-show-map {
+        background: transparent url(../img/ico-show-map-new.png) right center no-repeat;
+        height: 19px;
+        width: 18px;
+        background-size: 18px 19px;
+        }
+
+
+
+/*** 
+    Right elements block
+***/
+
+.block-with-right-elem {
+    position: relative;
+    }
+    .block-with-right-elem .right-elem {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        }
+        .block-with-right-elem .right-elem.button {
+            margin-top: -14px;
+            }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

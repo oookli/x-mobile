@@ -33,7 +33,6 @@
     content: none;
 }
 .flexslider .slides img {width: 100%; display: block;
-  max-width: 800px;
   min-width: 240px;}
 .flex-pauseplay span {text-transform: capitalize;}
 
@@ -55,7 +54,7 @@ html[xmlns] .slides {display: block;}
 	background: #fff;
 	position: relative;
 	zoom: 1;
-	max-width: 800px;
+	max-width: 640px;
 	margin: 0 auto 4px auto;
 }
 .flex-viewport {margin: 0 auto;

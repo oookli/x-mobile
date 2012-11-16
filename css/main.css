@@ -185,7 +185,7 @@ html, body {
 */
 
 /* Main nav trigger */
-    .mob-menu-but-right {
+    .mob-menu-but.right {
         position: absolute;
         top:0;
         right: 0;
@@ -196,7 +196,7 @@ html, body {
         background: transparent url(../img/main-nav-bg-but.png) 0 0 no-repeat;
         background-size: 69px 53px;
         }
-        .mob-menu-but-right:before {
+        .mob-menu-but.right:before {
             content: '';
             position: absolute;
             top: 50%;
@@ -208,7 +208,7 @@ html, body {
             background: url(../img/main-nav-trigger.png) no-repeat 0 0;
             background-size: 17px 15px;
             }
-        .mobile-menu-open-right .mob-menu-but-right:after {
+        .mobile-menu-open .mob-menu-but.right:after {
             content: '';
             position: absolute;
             top: 50%;
@@ -836,16 +836,16 @@ html, body {
 
 /* Type: Search form in sidebar */
 
-.mobile-menu-right .search-form-wrap {
+.mobile-menu.right .search-form-wrap {
     background-color: #276bab;
     -webkit-box-shadow: inset 2px 1px 3px rgba(0, 0, 0, .36);
     -moz-box-shadow: inset 2px 1px 3px rgba(0, 0, 0, .36);
     box-shadow: inset 2px 1px 3px rgba(0, 0, 0, .36);
     }
-    .mobile-menu-right .search-form {
+    .mobile-menu.right .search-form {
         margin: 0 1em;
         }
-        .mobile-menu-right .search-form .search-input {
+        .mobile-menu.right .search-form .search-input {
             background-color: #004d95;
             color: #fff;
             -moz-box-shadow:
@@ -862,12 +862,12 @@ html, body {
             background-clip: padding-box;
             height: 28px;
             }
-            .mobile-menu-right .search-form .search-input::-webkit-input-placeholder,
-            .mobile-menu-right .search-form .search-input::-moz-placeholder {
+            .mobile-menu.right .search-form .search-input::-webkit-input-placeholder,
+            .mobile-menu.right .search-form .search-input::-moz-placeholder {
                 color: #4f7eb1;
                 text-shadow: 0 1px 1px rgba(0,0,0,.4);   
                 }
-            .mobile-menu-right .search-form .search-submit {
+            .mobile-menu.right .search-form .search-submit {
                 -moz-box-shadow:
                     0 1px 1px rgba(0,0,0,.1);
                 -webkit-box-shadow:
@@ -878,8 +878,8 @@ html, body {
                 -webkit-background-clip: padding-box;
                 background-clip: padding-box;
                 }
-            .mobile-menu-right .search-form .search-input,
-            .mobile-menu-right .search-form .search-submit {
+            .mobile-menu.right .search-form .search-input,
+            .mobile-menu.right .search-form .search-submit {
                 border-color: #1e6ab0;
                 }
 

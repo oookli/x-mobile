@@ -24,7 +24,7 @@ if ( typeof Object.create !== "function" ){
       }
       thisElem.options = $.extend( {}, $.fn.responsiveMenu.options, options );
       thisElem.$mobMenu = $( "<div>", {
-        "class": "mobile-menu-"+thisElem.options.positionMenu,
+        "class": "mobile-menu "+thisElem.options.positionMenu,
         "html": "<ul></ul>",
         "css": {
           "height": thisElem.$html.height()
@@ -78,7 +78,7 @@ if ( typeof Object.create !== "function" ){
     displayMenu: function(elem){
       var thisElem = this,
           $mobBut = $( "<a>", {
-            "class": "mob-menu-but-"+thisElem.options.positionMenu,
+            "class": "mob-menu-but "+thisElem.options.positionMenu,
             "href": "#",
             "click": function(event){
               event.preventDefault();
@@ -127,6 +127,16 @@ if ( typeof Object.create !== "function" ){
               }
             }
           });
+      if (thisElem.options.useAnimCss) {
+        var transEnd = "";
+        if($.browser.webkit) {
+            transEnd = "webkitTransitionEnd";
+        } else if($.browser.mozilla) {
+            transEnd = "transitionend";
+        } else if ($.browser.opera) {
+            transEnd = "oTransitionEnd";
+        }
+      }
       if(!menuElem.hasClass("opened")) {
         menuElem.addClass("opened");
         thisElem.$body.css({
@@ -137,9 +147,21 @@ if ( typeof Object.create !== "function" ){
         thisElem.$html.css({
           "overflow": "hidden"
         });
-        thisElem.$elem
-          .addClass("mobile-menu-open-"+thisElem.options.positionMenu)
-          .append($mobDisable);
+        if(thisElem.options.useAnimCss) {
+          thisElem.$elem
+            .unbind(transEnd)
+            .addClass("mobile-menu-open "+thisElem.options.positionMenu)
+            .append($mobDisable);
+        }else {
+          thisElem.$elem
+            .addClass("mobile-menu-open")
+            .animate({
+              // (thisElem.options.positionMenu)?"+":"-"
+              marginLeft: (thisElem.options.positionMenu==="left")?"+":"-"+thisElem.calcPercent(thisElem.$elem.width(),60)
+            },"normal","swing",function(){
+              thisElem.$elem.append($mobDisable);
+            });
+        }
         if(thisElem.options.afterOpenFn && typeof thisElem.options.afterOpenFn === "function") {
           thisElem.options.afterOpenFn();
         }
@@ -150,14 +172,40 @@ if ( typeof Object.create !== "function" ){
     },
     closeMenu: function(menuElem){
       var thisElem = this;
-      thisElem.$elem
-        .removeClass("mobile-menu-open-"+thisElem.options.positionMenu)
-        .find(".disable-mobile").remove();
-      menuElem.removeClass("opened");
-      thisElem.$body.removeAttr("style");
+      if (thisElem.options.useAnimCss) {
+        var transEnd = "";
+        if($.browser.webkit) {
+            transEnd = "webkitTransitionEnd";
+        } else if($.browser.mozilla) {
+            transEnd = "transitionend";
+        } else if ($.browser.opera) {
+            transEnd = "oTransitionEnd";
+        }
+        thisElem.$elem
+          .bind(transEnd,function(){
+            menuElem.removeClass("opened");
+            thisElem.$body.removeAttr("style");
+          })
+          .removeClass("mobile-menu-open "+thisElem.options.positionMenu)
+          .find(".disable-mobile").remove();
+      }else {
+        thisElem.$elem
+          .animate({
+              marginLeft: 0
+            },"normal","swing",function(){
+              menuElem.removeClass("opened");
+              thisElem.$body.removeAttr("style");
+              thisElem.$elem
+                .removeClass("mobile-menu-open")
+                .find(".disable-mobile").remove();
+            });
+      }
       if(thisElem.options.afterCloseFn && typeof thisElem.options.afterCloseFn === "function") {
         thisElem.options.afterCloseFn();
       }
+    },
+    calcPercent: function(percElem,perc){
+      return calcPerc=(percElem*perc)/100;
     }
   };
   $.fn.responsiveMenu = function( options, callbackFn ){
@@ -173,6 +221,7 @@ if ( typeof Object.create !== "function" ){
     positionMenu: "left",
     minWidth: 768,
     menuElem: [],
+    useAnimCss: true,
     menuElemExcludeClass: "hide-for-responsive",
     ulClass: "",
     closeAfterClick: true,

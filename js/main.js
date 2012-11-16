@@ -21,10 +21,9 @@ $.fn.toggleClassChange = function(classObj){
 $wrap.responsiveMenu({
 		positionMenu: "right",
 		minWidth: 2000,
+		useAnimCss: Modernizr && Modernizr.csstransitions,
 		closeAfterClick: false,
-		menuElem: [$mainNav],
-		afterOpenFn: function(){},
-		afterCloseFn: function(){}
+		menuElem: [$mainNav]
 	});
 
 /*==============================

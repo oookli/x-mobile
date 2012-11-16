@@ -26,54 +26,59 @@
 .mobile-menu-left.opened,
 .mobile-menu-right.opened {
   display: block;
-}
+  }
   .mobile-menu-left ul,
   .mobile-menu-right ul {
     margin: 0;
     padding: 0;
     position: relative;
     z-index: 9;
-  }
+    }
     .mobile-menu-left ul li,
     .mobile-menu-right ul li {
       border-bottom: 1px solid #1e6ab0;
-      padding: 3px 0;
-    }
-    .mobile-menu-left ul li:before,
-    .mobile-menu-right ul li:before {
-      content: none;
-    }
+      padding: 0;
+      margin: 0;
+      }
+      .mobile-menu-left ul li:before,
+      .mobile-menu-right ul li:before {
+        content: none;
+        }
 
       .mobile-menu-left ul li a,
       .mobile-menu-right ul li a,
       .mobile-menu-left ul li span,
       .mobile-menu-right ul li span {
-        background: none repeat scroll 0 0 #01529c;
         display: block;
         font-weight: normal;
-        padding: 0.9em 0;
-        margin: 0 1em;
+        padding: 0.9em 1em;
         text-decoration: none;
+        outline: 0 !important;
         color: #ffffff;
         font-size: 14px;
-        background: transparent url(../img/arrow-right-light.png) right center no-repeat;
-        background-size: 9px 16px;
-      }
+        }
+        .mobile-menu-left ul li a:after,
+        .mobile-menu-right ul li a:after,
+        .mobile-menu-left ul li span:after,
+        .mobile-menu-right ul li span:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          background: transparent url(../img/arrow-right-light.png) right center no-repeat;
+          background-size: 9px 16px;
+          width: 9px;
+          height: 16px;
+          margin-top: -8px;
+          }
 
-      .mobile-menu-left ul li.current a,
-      .mobile-menu-right ul li.current a,
-      .mobile-menu-left ul li.current span,
-      .mobile-menu-right ul li.current span {
-        background: none;
-      }
-      /*.mobile-menu-left ul li a,
-      .mobile-menu-right ul li a {
-        color: #01529c;
-      }
-      .mobile-menu-left ul li span,
-      .mobile-menu-right ul li span {
-        color: #01529c;
-      }*/
+        .mobile-menu-left ul li.current a:after,
+        .mobile-menu-right ul li.current a:after,
+        .mobile-menu-left ul li.current span:after,
+        .mobile-menu-right ul li.current span:after {
+          display: none;
+          }
+      
 .mobile-menu-open-left,
 .mobile-menu-open-right {
   width: 100%;

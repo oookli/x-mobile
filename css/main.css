@@ -331,7 +331,7 @@ html, body {
 /* Address block */
 
 .address-block {
-    margin: 0;
+    margin-left:5px;
     font-style:normal;
     }
     .address-block p {
@@ -971,12 +971,12 @@ html, body {
                     height: 22px;
                     position: relative;
                     }
-                    #footer .but-cont-hor .but-cont {
+                    #footer .but-cont-hor .buttons-group {
                         position: absolute;
                         right: -15px;
                         top: 0;
                         }
-                        #footer .but-cont-hor .but-cont a {
+                        #footer .but-cont-hor .buttons-group a {
                             text-transform: uppercase;
                             }
             #footer .footer-logo {
@@ -1087,7 +1087,7 @@ html, body {
 
 /* Type: Button small */
 .button.small {
-    padding:4px 7px; 
+    padding:4px; 
 }
 
 /*
@@ -1112,6 +1112,7 @@ html, body {
     .buttons-group .button{
         -webkit-border-radius: 0px;
         border-radius: 0px;
+        margin: 0;
         }
        .buttons-group .button:first-child {
             -webkit-border-top-left-radius: 3px;
@@ -1148,16 +1149,22 @@ html, body {
 
     .icon-show-map {
         background: transparent url(../img/ico-show-map-new.png) right center no-repeat;
+        background-size: 18px 19px;
         height: 19px;
         width: 18px;
-        background-size: 18px 19px;
         margin-bottom: -6px !important;
         }
 
-
-/*
-    icon styles
-*/
+    .icon-phone {
+        background: transparent url(../img/ico-show-map-new.png) right center no-repeat;
+        background-size: 7px 11px;
+        height: 11px;
+        width: 7px;
+        margin-top: 0px;
+        margin-bottom:-1px;
+        }
+        
+/* icon styles */
     .icon-left {
         background-position: center 10px;
         }
@@ -1181,7 +1188,6 @@ html, body {
         margin-right: 6px;
         }
 
-        
 /* ==========================================================================
    Helper classes
    ========================================================================== */

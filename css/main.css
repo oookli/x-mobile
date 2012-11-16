@@ -46,11 +46,25 @@ textarea {
 
 table {
     text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    margin:10px 0 10px; 
     }
+    table th {
+        padding: 5px;
+        border: #ccc solid 1px;
+        background: #eee;
+        text-shadow:0 1px 0 #fff;
+        }
+    table td {
+        padding: 5px;
+        border: #ccc solid 1px; 
+        }
+
 
 /* Lists */
 ul {
-    margin: 0 0 5px;
+    margin: 0 0 10px;
     padding: 0;
     }
     ul li {
@@ -65,6 +79,16 @@ ul {
             position: absolute;
             left: 0;
             }
+
+ol {
+    margin: 0 0 10px 20px;
+    padding: 0;
+    }
+    ol li {
+        margin: 0 0 2px;
+        padding: 0;
+        }
+
 
 /* Headings */
 h1 {
@@ -275,9 +299,7 @@ html, body {
                 }
                  .nav-list ul li:before {
                     display: none;
-                    }
-     
-            
+                    }           
 
 /***
     Content
@@ -286,6 +308,7 @@ html, body {
         padding: 15px 0 71px;
         position: relative;
         }  
+
 
 /***
     Common elements
@@ -346,6 +369,7 @@ html, body {
 /*
     Block item
 */
+
 .block-item {
     padding: 10px 0px;
     display: block;
@@ -358,7 +382,6 @@ html, body {
         padding: 10px 0;
         color: #666;
         }
-
         .block-item-header {
             margin-bottom: 5px;
             }
@@ -437,7 +460,7 @@ html, body {
                 margin-bottom: 0;
                 }
 
-    /* Type: gradient block darker-gradient */
+    /* Type: gradient block - darker-gradient */
     .gradient-block.darker-gradient {
         background: #f8f8f8;
         background: -moz-linear-gradient(top,  #f8f8f8 0%, #eef0f6 100%);
@@ -590,33 +613,31 @@ html, body {
 .sel-block {
     position: relative;   
     }
-.select-arrow {
-    position: absolute;
-    background: #fff url(../img/select-arrow.png) center center no-repeat;
-    width: 20px;
-    height: 21px;
-    right: 9px;
-    top: 11px;
-    background-size: 9px 14px;
-    border: 0;
-    outline: 0;
-    }
+    .select-arrow {
+        position: absolute;
+        background: #fff url(../img/select-arrow.png) center center no-repeat;
+        width: 20px;
+        height: 21px;
+        right: 9px;
+        top: 11px;
+        background-size: 9px 14px;
+        border: 0;
+        outline: 0;
+        }
 
-.map-page {
-    background: transparent url(../img/ico-map-page.png) 0 0 no-repeat; 
-    background-size: 31px 28px;
-    display: block;
-    height: 28px;
-    width: 31px;
-    position: absolute;
-    right: 0;
-    top: -6px;
-}
+
 
 
 /*
     Map page
 */
+
+.map-page-link {
+    position: absolute;
+    right: 0;
+    top: -6px;
+    }
+
 #map-page {
     margin: -15px -10px -71px;
     position: relative;
@@ -632,45 +653,19 @@ html, body {
             z-index: 2;
             top: 10px;
             left: 40px;
-            text-decoration: none;
-            padding: 7px 9px 7px 23px;
-            border: #c8ccdc solid 1px;
-            -webkit-border-radius: 3px;
-            border-radius: 3px;
-            -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
-            background: #ffffff;
-            background: -moz-linear-gradient(top,  #ffffff 0%, #eef0f6 100%);
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eef0f6));
-            background: -webkit-linear-gradient(top,  #ffffff 0%,#eef0f6 100%);
-            background: -o-linear-gradient(top,  #ffffff 0%, #eef0f6 100%);
-            background: -ms-linear-gradient(top,  #ffffff 0%, #eef0f6 100%);
-            background: linear-gradient(to bottom,  #ffffff 0%, #eef0f6 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eef0f6',GradientType=0 );
-            color: #113184;
             font-style: 13px;
-            line-height: 1;
-            outline: 0 !important;
-            text-shadow: 0 1px 0 #fff;
             }
-            .map-back-button:before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 5px;
-                margin: -6px 0;
-                width: 8px;
-                height: 13px;
-                background: url(../img/arrow-left.png);
-                background-size: 8px 14px;
-                }
             
 
 /* 
     Paginator 
 */
+
 .paginator {
     padding: 10px 0;
     overflow: hidden;
+    font-size: 13px;
+    line-height: 1;
     }
     .paginator ul {
         margin: 0;
@@ -680,7 +675,7 @@ html, body {
         .paginator ul li {
             float: left;
             list-style: none;
-            margin: 0;
+            margin: 0 1px 0 0;
             padding: 0;
             }
             .paginator ul li:before {
@@ -689,28 +684,19 @@ html, body {
         .paginator a {
            color: #005199; 
            text-decoration: none;
-           font-size: 13px;
            padding: 6px 10px;
            display: block;
-           overflow: hidden;
-            }
+           }
 
-    /* Type: paginator li act */
-    .paginator li.act a {
+    /* Type: paginator current element */
+    .paginator li .current {
+        padding: 6px 10px;
+        display: block;
         background-color: #0066aa;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
         color: #ffffff;
-        }
-
-    /* Type: paginator li next */
-    .paginator li.next a {
-        background: transparent url(../img/ico-next.png) 0 0 no-repeat;
-        background-size: 25px 25px; 
-        width: 25px;
-        height:25px;
-        padding: 0;
         }
 
 
@@ -719,8 +705,8 @@ html, body {
 ***/
 
 .search-form{
-   padding: 10px 42px 5px 0;
-   overflow: hidden;
+    padding: 10px 42px 5px 0;
+    overflow: hidden;
     position: relative;
     }
     .search-form img {
@@ -855,7 +841,7 @@ html, body {
                 0 1px 1px rgba(255,255,255,.4),
                 inset 0 1px 1px #003668;
             box-shadow:
-                0 1px 1px rgba(255,255,255,.4),
+                0 1px 0px rgba(255,255,255,.4),
                 inset 0 1px 1px #003668;
             -moz-background-clip: padding;
             -webkit-background-clip: padding-box;
@@ -960,7 +946,7 @@ html, body {
             float: left;
             padding: 8px 15px 0 0;
             font-size: 7px; 
-        }
+            }
         #footer .footer-link-tariff {
             float: left;
             color: #005199;
@@ -1024,11 +1010,12 @@ html, body {
     background: #EEF0F6;
     -webkit-box-shadow: 0 7px 3px 0px rgba(255, 255, 255, .8) inset;
             box-shadow: 0 7px 3px 0px rgba(255, 255, 255, .8) inset;
-
     color: #005199;
     font-size: 12px;
-    line-height: 1;
+    line-height: 13px;
     text-shadow: 0 1px 0 #fff;
+    margin-top: -1px;
+    margin-bottom: -1px;
     }
     .button:active {
         -webkit-box-shadow: 0 -7px 3px 0px rgba(255, 255, 255, .8) inset;
@@ -1052,13 +1039,14 @@ html, body {
     text-shadow:none;
     border: 1px solid #EB0A14;
     background: #EB0A14;
-    -webkit-box-shadow: 0 7px 5px 0px rgba(255, 255, 255, .4) inset;
-            box-shadow: 0 7px 5px 0px rgba(255, 255, 255, .4) inset;
+    -webkit-box-shadow: 0 7px 5px 0px rgba(255, 255, 255, .2) inset;
+            box-shadow: 0 7px 5px 0px rgba(255, 255, 255, .2) inset;
     }
     .button.red:active {
-        -webkit-box-shadow: 0 -7px 5px 0px rgba(255, 255, 255, .4) inset;
-            box-shadow: 0 -7px 5px 0px rgba(255, 255, 255, .4) inset;
+        -webkit-box-shadow: 0 -7px 5px 0px rgba(255, 255, 255, .2) inset;
+            box-shadow: 0 -7px 5px 0px rgba(255, 255, 255, .2) inset;
         }
+
     /* State: red button pushed */
     .button.red.pushed,
     .button.red.pushed:active {
@@ -1069,34 +1057,37 @@ html, body {
                 box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .1) inset;
         }
 
+
 /* Type: Button red */
 .button.blue {
     color: #fff;
     text-shadow:none;
     border: 1px solid #113184;
     background: #113184;
-    -webkit-box-shadow: 0 8px 7px 0px rgba(255, 255, 255, .2) inset;
-            box-shadow: 0 8px 7px 0px rgba(255, 255, 255, .2) inset;
+    -webkit-box-shadow: 0 8px 7px 0px rgba(255, 255, 255, .1) inset;
+            box-shadow: 0 8px 7px 0px rgba(255, 255, 255, .1) inset;
     }
     .button.blue:active {
         -webkit-box-shadow: 0 -8px 7px 0px rgba(255, 255, 255, .2) inset;
             box-shadow: 0 -8px 7px 0px rgba(255, 255, 255, .2) inset;
         }
+
     /* State: red button pushed */
     .button.blue.pushed,
     .button.blue.pushed:active {
         background: #526084;
         color: #eee;
         text-shadow:0 -1px 0 #113184;
-        -webkit-box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .2) inset;
-                box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .2) inset;
+        -webkit-box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .1) inset;
+                box-shadow: 0 4px 2px 0px rgba(0, 0, 0, .1) inset;
         }
 
 /* Type: Button small */
 .button.small {
     padding:4px; 
     font-size: 10px;
-}
+    line-height: 11px;
+    }
 
 /*
     Type: empty button with icon
@@ -1107,7 +1098,7 @@ html, body {
     }
 
 /*
-    Type: Buttons group
+    Buttons group
 */
 .buttons-group {
     display: inline-block;
@@ -1120,7 +1111,7 @@ html, body {
     .buttons-group .button{
         -webkit-border-radius: 0px;
         border-radius: 0px;
-        margin: 0;
+        margin-right:-1px;
         }
        .buttons-group .button:first-child {
             -webkit-border-top-left-radius: 3px;
@@ -1137,10 +1128,13 @@ html, body {
             -moz-border-radius-bottomright: 3px;
             border-top-right-radius: 3px;
             border-bottom-right-radius: 3px;
+            margin-right: 0;
             }
-/*
+
+/***
     Icons
-*/
+***/
+
 .icon {
     display: inline-block;
     *display: inline;
@@ -1158,8 +1152,12 @@ html, body {
 
     /* State: icon in empty button */
     .button.empty .icon {
-        margin: -5px -6px;
+        margin-right:-6px;
+        margin-left: -6px;
         }
+
+
+    /* Icons types */
 
     .icon-show-map {
         background: transparent url(../img/ico-show-map.png) right center no-repeat;
@@ -1167,6 +1165,13 @@ html, body {
         height: 19px;
         width: 18px;
         margin-bottom: -6px !important;
+        }
+
+    .icon-map-page {
+        background: transparent url(../img/ico-map-page.png) right center no-repeat;
+        background-size: 16px 17px;
+        height: 16px;
+        width: 17px;
         }
 
     .icon-phone {
@@ -1198,6 +1203,32 @@ html, body {
         margin-top: 0;
         margin-bottom: 0;
         }
+
+    .icon-arrow-left {
+        background: url(../img/arrow-left.png) no-repeat 0 0;
+        background-size: 8px 14px;
+        width: 8px;
+        height: 14px;
+        margin-top: 0px;
+        margin-bottom: -3px;
+        }
+        .button.empty .icon.icon-arrow-left {
+            margin-right: 0px;
+            margin-left: -2px;
+            }
+
+    .icon-arrow-right {
+        background: url(../img/arrow-right.png) no-repeat 0 0;
+        background-size: 8px 14px;
+        width: 8px;
+        height: 14px;
+        margin-top: 0px;
+        margin-bottom: -3px;
+        }
+        .button.empty .icon.icon-arrow-right {
+            margin-right: -1px;
+            margin-left: -1px;
+            }
 
 
 /* ==========================================================================

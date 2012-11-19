@@ -38,14 +38,12 @@ $('.flexslider').flexslider({
 					sliderMargin = parseFloat(sliderWidth/26,10),
 					fixWidth = parseFloat(sliderMargin/slider.count,10),
 					TotalWidth=0;
-			console.dir(slider.currentSlide);
 			$(slider.controlNav).parent().each(function(){
 				$(this).css({
 					"width": sliderWidth-(sliderMargin*2)+(fixWidth*2)+"%",
 					"margin": "0 "+(($(this).is(":last-child"))?0:sliderMargin)+"%"+" 0 "+(($(this).is(":first-child"))?0:sliderMargin)+"%"
 				});
 			});
-			// console.log(sliderWidth-(sliderMargin*2),sliderMargin);
     }
 });
 

@@ -216,11 +216,12 @@ if ( typeof Object.create !== "function" ){
             .unbind(transEnd)
             .addClass("mobile-menu-open "+thisElem.options.positionMenu)
             .append($mobDisable);
+          console.log(thisElem.$elem[0]);
+          console.log($mobDisable[0]);
         }else {
           thisElem.$elem
             .addClass("mobile-menu-open")
             .animate({
-              // (thisElem.options.positionMenu)?"+":"-"
               marginLeft: (thisElem.options.positionMenu==="left")?"+":"-"+thisElem.calcPercent(thisElem.$elem.width(),60)
             },"normal","swing",function(){
               thisElem.$elem.append($mobDisable);
@@ -229,8 +230,8 @@ if ( typeof Object.create !== "function" ){
         if( (typeof thisElem.options.elemTranslate !== "undefined") && (thisElem.options.elemTranslate.length!=0) ){
           $.each(thisElem.options.elemTranslate,function( i, val ){
             $(val)
-              .addClass("mobile-menu-open-"+thisElem.options.positionMenu)
-              .append($mobDisable);
+              .addClass("mobile-menu-open "+thisElem.options.positionMenu)
+              .append($mobDisable.clone());
           });
         }
         if(thisElem.options.afterOpenFn && typeof thisElem.options.afterOpenFn === "function") {
@@ -274,7 +275,7 @@ if ( typeof Object.create !== "function" ){
       if( (typeof thisElem.options.elemTranslate !== "undefined") && (thisElem.options.elemTranslate.length!=0) ){
         $.each(thisElem.options.elemTranslate,function( i, val ){
           $(val)
-            .removeClass("mobile-menu-open-"+thisElem.options.positionMenu)
+            .removeClass("mobile-menu-open "+thisElem.options.positionMenu)
             .find(".disable-mobile").remove();
         });
       }

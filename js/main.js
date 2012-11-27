@@ -6,15 +6,7 @@
 var $wrap = $("#main-wrap"),
 	$mainNav = $("#main-nav ul");
 
-$.fn.toggleClassChange = function(classObj){
-	if (typeof classObj === "undefined") {
-		classObj = "";
-	}
-	var $this = $(this);
-	(!$this.hasClass(classObj))?
-		$this.addClass(classObj)
-		:$this.removeClass(classObj);
-};
+
 /*==============================
 	apply resmenu
 */
@@ -140,22 +132,11 @@ $('.flexslider').flexslider({
 	Custom checkboxes
 */
 
-$(".checkbox-cont")
-	.on("change","input[type='checkbox']",function(){
-		$(this).next().toggleClassChange("checked");
+$(".checkbox-cont").on("change","input[type='checkbox']",function(){
+		$(this).next().toggleClass("checked");
 	})
-	.on("click","label",function(event){
-		event.preventDefault();
-		var $thisPrev = $(this).prev(),
-				$thisInput = $thisPrev.find("input[type='checkbox']");
-		if(!$thisInput.is(":checked")) {
-			$thisInput.attr("checked",true);
-		}else {
-			$thisInput.attr("checked",false);
-		}
-		$thisPrev.find(".checkbox-block").toggleClassChange("checked");
-		console.log($thisInput.is(":checked"));
-	});
+
+	
 
 
 /*==============================

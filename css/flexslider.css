@@ -21,7 +21,7 @@
 
 /* FlexSlider Necessary Styles
 *********************************/ 
-.flexslider {margin: 0; padding: 0;}
+.flexslider {margin: 0; padding: 0; position: relative;}
 .flexslider .slides > li {
 	display: none; 
 	-webkit-backface-visibility: hidden;
